@@ -1,0 +1,16 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+?>
+<footer class="page-footer">
+<div class="footer content">
+        <?= $block->getChildHtml() ?>
+        <p class="col-title col-1down"><?= $block->escapeHtml(__('Help Us Keep Magento Healthy')) ?> - <a
+            href="http://www.magentocommerce.com/bug-tracking"
+            target="_blank"><strong><?= $block->escapeHtml(__('Report All Bugs')) ?></strong></a>
+        </p>
+        <address><?= $block->escapeHtml($block->getCopyright()) ?></address>
+    </div>
+</div>

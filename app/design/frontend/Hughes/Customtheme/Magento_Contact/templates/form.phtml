@@ -1,0 +1,173 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// phpcs:disable Magento2.Templates.ThisInTemplate
+// phpcs:disable Generic.Files.LineLength.TooLong
+
+/** @var \Magento\Contact\Block\ContactForm $block */
+/** @var \Magento\Contact\ViewModel\UserDataProvider $viewModel */
+/** @var $block \Magento\Checkout\Block\Cart\Sidebar */
+/** @var \Magento\Framework\View\Helper\SecureHtmlRenderer $secureRenderer */
+
+
+$viewModel = $block->getViewModel();
+
+
+$objectManager =  \Magento\Framework\App\ObjectManager::getInstance();    
+	$cart = $objectManager->get('\Magento\Checkout\Model\Cart');
+	$items = $cart->getQuote()->getAllVisibleItems();
+
+    ?>
+
+
+
+
+<div class="wrap-content">
+<form class="form contact"
+      action="<?= $block->escapeUrl($block->getFormAction()) ?>"
+      id="contact-form"
+      method="post"
+      data-hasrequired="<?= $block->escapeHtmlAttr(__('* Required Fields')) ?>"
+      data-mage-init='{"validation":{}}'>
+	<p class="desc" style="color:#666666">
+      <strong style="font-family:'Avenir Black';font-size: 18px; ">To request a quote or receive further information
+        simply complete the form below and we will be in touch.</strong>
+
+    </p>
+	<p style="font-family:'CONV_AVENIR_45_BOOK';font-size: 14px; ">Details provided below will be used to respond to
+      this enquiry only. Please refer to our <a style="color:#105a99;" href="#">Privacy
+        Policy</a> for more information.</p>
+	<div class="details">
+		<fieldset class="fieldset">
+			<div class="title">
+			<img src="<?= $block->getViewFileUrl('img/vector-down.png'); ?>" alt="Demo" />
+			<h4>Your Details</h4>
+			</div>
+			<div class="field name required">
+				<label class="field-label" for="name"><span><?= $block->escapeHtml(__('Name')) ?></span></label>
+				<div class="control">
+					<input name="name"
+						   id="name"
+						   title="<?= $block->escapeHtmlAttr(__('Name')) ?>"
+						   value="<?= $block->escapeHtmlAttr($viewModel->getUserName()) ?>"
+						   class="input-text"
+						   type="text"
+						   data-validate="{required:true}"/>
+				</div>
+			</div>
+			<div class="field email required">
+				<label class="field-label" for="email"><span><?= $block->escapeHtml(__('Email')) ?></span></label>
+				<div class="control">
+					<input name="email"
+						   id="email"
+						   type="email"
+						   title="<?= $block->escapeHtmlAttr(__('Email')) ?>"
+						   value="<?= $block->escapeHtmlAttr($viewModel->getUserEmail()) ?>"
+						   class="input-text"
+						   type="email"
+						   data-validate="{required:true, 'validate-email':true}"
+						   data-mage-init='{"mage/trim-input":{}}'
+					/>
+				</div>
+			</div>
+			<div class="field telephone">
+				<label class="field-label" for="telephone"><span><?= $block->escapeHtml(__('Phone Number')) ?></span></label>
+				<div class="control">
+					<input name="telephone"
+						   id="telephone"
+						   title="<?= $block->escapeHtmlAttr(__('Phone Number')) ?>"
+						   value="<?= $block->escapeHtmlAttr($viewModel->getUserTelephone()) ?>"
+						   class="input-text"
+						   type="tel"
+							data-validate="{required:true ,'validate-number':true}"						   />
+				</div>
+			</div>
+			
+			<div class="field comment " style="width:100%;max-width: 100%;border-radius:5px">
+
+				<label class="field-label" for="comment">
+					<span><?= $block->escapeHtml(__('What’s on your mind?')) ?></span>
+				</label>
+				<div class="control">
+					<textarea name="comment"
+							  id="comment"
+							  title="<?= $block->escapeHtmlAttr(__('What’s on your mind?')) ?>"
+							  class="input-text"
+							  cols="5"
+							  rows="3"
+							  data-validate="{required:true}"
+					><?= $block->escapeHtml($viewModel->getUserComment()) ?></textarea>
+				</div>
+			</div>
+			<?= $block->getChildHtml('form.additional.info') ?>
+		</fieldset>
+	
+    <div class="actions-toolbar">
+        <div class="primary">
+            <input type="hidden" name="hideit" id="hideit" value="" />
+            <button type="submit" title="<?= $block->escapeHtmlAttr(__('Enquire Now')) ?>" class="action submit primary action-button">
+                <span><?= $block->escapeHtml(__('Enquire Now')) ?></span>
+            </button>
+        </div>
+    </div>
+	
+	</div>
+	</form>
+	<div class="wrap-right" style="max-width: 490px;width:100%;">
+		<div class="enquiry-wrap">
+			  <div class="title"><img src="<?= $block->getViewFileUrl('img/vector-down.png'); ?>" alt="Demo" />
+					<h4>Included in Your Enquiry</h4>
+			  </div>
+		  <ul class="cart-items" style="padding: 0;">
+			<?php foreach($items as $item) :  ?>  
+			<?php if ($item->getProduct()): ?>						
+				<li style="display:flex;align-items:center;" class="product-wrapper item" data-product-id="<?= $item->getId() ?>" data-sku="<?= $item->getSku() ?>">
+					<a href="<? echo $block->getBaseUrl().$item->getProduct()->getRequestPath(); ?>">
+					<? 
+						// $objectManager =\Magento\Framework\App\ObjectManager::getInstance();
+						$helperImport = $objectManager->get('\Magento\Catalog\Helper\Image');
+
+						$imageUrl = $helperImport->init($item->getProduct(),'product_page_image_small')
+									->setImageFile( $item->getProduct()->getSmallImage()) // image,small_image,thumbnail
+									->resize(50)
+									->getUrl();
+					?>
+					<img width="80" height="80" src="<? echo $imageUrl; ?>">
+					<span class="product-name"><?= $item->getName() ?></span></a>
+					<span class="btn-delete" style="cursor:pointer;"data-item-id="<?= $item->getId() ?>">&nbsp;</span>
+				</li>
+				<?php else: ?>
+				<span>
+				</span>
+				<?php endif; ?>
+			
+			
+				
+		
+			<?php endforeach; ?>
+		</ul>
+	  </div>
+<?php
+	echo $this->getLayout()
+	->createBlock('Magento\Cms\Block\Block')
+	->setBlockId('content-wrap')
+	->toHtml();
+?>
+	  </div>
+	  
+	
+</div>
+
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Customer/js/block-submit-on-send": {
+                "formId": "contact-form"
+            }
+        }
+    }
+</script>

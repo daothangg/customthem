@@ -1,0 +1,53 @@
+<?php
+/**
+* Author: Hemant Singh
+* Developer: Hemant Singh Magento 2x Developer
+* Website: http://www.wishusucess.com/
+*/
+/** Wishuscess Magento 2 Catalog Search Result changes need to valid applying filters and configuration before search process is started. */
+$productList = $block->getProductListHtml();
+?>
+<ul class="mst-search_result-tabs">
+<li>
+<a class="active" href="<?php echo $this->getUrl('catalogsearch/result') ?>">Product<span class="count-result">
+   (<?php echo $block->getResultCount(); ?>)
+</span>
+</a>
+<?php if ($block->getResultCount()) : ?>
+<?= /* @noEscape */ $block->getChildHtml('tagged_product_list_rss_link') ?>
+<?php endif; ?>
+</li>
+<li>
+<a href="#">The Hub<span class="count-result">(4)</span></a>
+</li>
+<li>
+<a href="#">Content<span class="count-result">(10)</span></a>
+</li>
+</ul>
+
+<div class="search results">
+<?php if ($messages = $block->getNoteMessages()) : ?>
+<div class="message notice">
+<div>
+<?php foreach ($messages as $message) : ?>
+<?= /* @noEscape */ $message ?><br />
+<?php endforeach; ?>
+</div>
+</div>
+<?php endif; ?>
+<?= /* @noEscape */ $productList ?>
+</div>
+
+
+<!--<div class="message notice">
+<div>
+<?= $block->escapeHtml($block->getNoResultText() ? $block->getNoResultText() : __('Your search returned no results.')) ?>
+<?= /* @noEscape */ $block->getAdditionalHtml() ?>
+<?php if ($messages = $block->getNoteMessages()) : ?>
+<?php foreach ($messages as $message) : ?>
+<br /><?= /* @noEscape */ $message ?>
+<?php endforeach; ?>
+<?php endif; ?>
+</div>
+</div>
+-->

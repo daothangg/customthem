@@ -1,0 +1,19 @@
+<?php
+echo $this->getLayout()
+->createBlock('Magento\Cms\Block\Block')
+->setBlockId('suitabilities')
+->toHtml();
+?>
+<script>
+require(['jquery'],function($){
+	jQuery(document).ready(function(){
+		$(".suitab-tooltip-wrap").mouseover(function(){
+			$('.suitab-tootip').text($(this).find('.img-tool-tip').attr('data-title'));
+			$('.suitab-tootip').show();
+		}).mouseout(function(){
+			$('.suitab-tootip').hide();
+		});
+	})
+}) 
+
+</script>

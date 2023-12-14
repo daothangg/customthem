@@ -1,0 +1,66 @@
+
+require(['jquery','Magento_Customer/js/customer-data','Magento_Customer/js/customer-data'],function($,customerData){
+        $(document).ready(function () {
+         $('body').on("click",".-pluss,.-minuss",function(){
+            var obj = $(this);
+			  
+            var currentQty = obj.siblings('.cart-item-qty').val();
+            var iid = obj.siblings('.update-cart-item').attr('data-cart-item');
+
+            if(obj.hasClass('-pluss')){
+                var newAdd = parseInt(currentQty)+parseInt(1);
+                obj.siblings('.cart-item-qty').val(newAdd);
+                obj.siblings('.cart-item-qty').attr('data-item-qty',newAdd);
+				ajaxUpdate();
+                 
+            } else {
+                if(parseInt(currentQty) > 1){
+                    var newAdd = parseInt(currentQty)-parseInt(1);
+                    obj.siblings('.cart-item-qty').val(newAdd); 
+                    obj.siblings('.cart-item-qty').attr('data-item-qty',newAdd);
+                }
+			   ajaxUpdate();
+            }
+        });
+        $(document).on('change', 'input.item-qty.cart-item-qty', function () {
+            var $this = $(this),
+                productId = $(this).parents('td').data('id'),
+                updateButton = $("#update-" + productId + "-qty");
+
+            updateButton.show().removeClass('hidden').addClass('visible');
+            $(updateButton).on('click', function () {
+                ajaxUpdate();
+            });
+        });
+
+        function ajaxUpdate() {
+            var form = $('#mini-cart.minicart-items');
+            $.ajax({
+                url: form.attr('action'),
+                type: "POST",
+                data: form.serialize(),
+                showLoader: true,
+                cache: false,
+                success: function (res) {
+                    var parsedResponse = $.parseHTML(res),
+                        result = $(parsedResponse).find("#mini-cart.minicart-items"),
+                        sections = ['cart'];
+
+                    // form.replaceWith(result);
+
+                    // The mini cart reloading
+                    customerData.invalidate(sections);
+					customerData.reload(sections, true);
+
+                   
+                },
+                error: function (xhr, status, error) {
+                    var err = eval("(" + xhr.responseText + ")");
+                    console.log(err.Message);
+                }
+            });
+            return true;
+        };
+    });
+});
+    

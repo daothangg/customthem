@@ -1,0 +1,49 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/**
+ * @var $block \Magento\Theme\Block\Html\Title
+ */
+$cssClass = $block->getCssClass() ? ' ' . $block->getCssClass() : '';
+$titleHtml = '';
+if (trim($block->getPageHeading())) {
+    $titleHtml = '<span class="base" data-ui-id="page-title-wrapper" '
+        . $block->getAddBaseAttribute()
+        . '>'
+        . $block->escapeHtml($block->getPageHeading())
+        . '</span>';
+}
+?>
+<?php if ($titleHtml) : ?>
+<div class="category-view">
+<div class="first-wrap-category">
+    <div class="second-wrap-category">
+	<div class="main-wrap">
+	<div class="col-left">
+		<div class="product media">
+		<div class="page-title-wrapper product">
+        <div class="category-name" style="clear:both;"<?= $block->escapeHtmlAttr($cssClass) ?>>
+     
+		<img src="<?= $block->getViewFileUrl('img/arrow-next-cat-title.png'); ?>" alt="Demo" />
+
+        <h1 style="display:inline-block;margin: 0;"
+        <?php if ($block->getId()) : ?> id="<?= $block->escapeHtmlAttr($block->getId()) ?>" <?php endif; ?>
+        <?php if ($block->getAddBaseAttributeAria()) : ?>
+            aria-labelledby="<?= $block->escapeHtmlAttr($block->getAddBaseAttributeAria()) ?>"
+        <?php endif; ?>>
+        <?= /* @noEscape */ $titleHtml ?>
+    </h1>
+        </div>
+		</div>
+    </div>
+	</div>
+	</div>
+    
+    <?= $block->getChildHtml() ?>
+    </div>
+    </div>
+</div>
+<?php endif; ?>

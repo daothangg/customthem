@@ -1,0 +1,23 @@
+<div class="fieldset"
+         data-bind="attr: {'data-hasrequired': $t('* Required Fields')}">
+        <div class="field date required">
+            <label class="label" for="date">
+                <span data-bind="i18n: 'Receiving '"></span>
+            </label>
+            <div class="control">
+               <input class="input-text" type="text" data-bind="
+    value: value,
+    valueUpdate: 'keyup',
+    hasFocus: focused,
+    attr: {
+        name: inputName,
+        placeholder: placeholder,
+        'aria-describedby': getDescriptionId(),
+        'aria-required': required,
+        'aria-invalid': error() ? true : 'false',
+        id: uid,
+        disabled: disabled
+    }" >
+            </div>
+        </div>
+    </div>

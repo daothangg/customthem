@@ -1,0 +1,24 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var $block \Magento\Catalog\Block\Category\Rss\Link */
+
+// $objectManager =  \Magento\Framework\App\ObjectManager::getInstance();    
+	// $cart = $objectManager->get('\Magento\Checkout\Model\Cart');
+	// $items = $cart->getQuote()->getAllVisibleItems();
+	// foreach($items as $item) {
+		  // echo 'ID: '.$item->getProductId().'<br />';
+    // echo 'Name: '.$item->getName().'<br />';
+    // echo 'Sku: '.$item->getSku().'<br />';
+    // echo 'Quantity: '.$item->getQty().'<br />';
+    // echo 'Price: '.$item->getPrice().'<br />';
+    
+	// }
+?>
+<?php if ($block->isRssAllowed() && $block->getLink() && $block->isTopCategory()) :?>
+    <a href="<?= $block->escapeUrl($block->getLink()) ?>"
+       class="action link rss"><span><?= $block->escapeHtml($block->getLabel()) ?></span></a>
+<?php endif; ?>

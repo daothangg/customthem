@@ -1,0 +1,1513 @@
+.block-blog-recent-post .block-content {
+  overflow: unset;
+}
+.block-blog-recent-post .block-recent-posts {
+  margin: 0 !important;
+}
+.owl-carousel.owl-loaded {
+  display: block;
+}
+input#search {
+       text-align: left;
+	   color: #252225;
+
+}
+strong.block-subtitle.filter-subtitle {
+  font-size: 17px;
+}
+@media (min-width: 769px), print
+{
+  .page-layout-2columns-left .sidebar-main,.page-layout-2columns-left .sidebar-additional{
+    margin-left: -250px;
+    margin-top:3px;
+  }
+}
+/* @media (min-width: 769px), print{
+.page-layout-2columns-left .column.main {
+    width: 89%  !important;
+    align-items: center;
+}
+} */
+@media (min-width: 769px), print{
+.filter.active .filter-options, .filter-options {
+     background: transparent; 
+    clear: both; 
+    display: block;
+    overflow: unset; 
+     position: unset;
+}
+}
+.catalog-category-view .swatch-option {
+  border: none;
+  margin-top: 2px;
+  border: 0px;
+  min-width: 25px !important;
+  width: 25px !important;
+  height: 25px !important;
+  margin: 0;
+  outline: 0;
+}
+
+span.fa.fa-eye {
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+ 
+}
+/* .customer-account-create .eye {
+  margin-top: -28px;
+  float: right;
+  margin-right: 10px;
+} */
+.customer-account-login .eye,.customer-account-create .eye {
+  float: right;
+  margin-bottom: -28px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+.field.password .control{
+  display: block !important;
+}
+span.fa-eye-slash{
+  margin-bottom: -25px;
+  position: relative;
+  z-index: 2;
+
+}
+.catalog-product-view .swatch-option-tooltip .image{
+  display: none !important;
+}
+div#switcher-language-trigger {
+    width: 100px;
+}
+.catalogsearch-result-index .mst-search_result-tabs li a span {
+    font-family: 'Conv_Avenir_45_Book';
+	    margin-left: 10px;
+}
+
+.catalog-product-view .category-name .demo{
+	display:none 
+}
+.field.street .field .label{
+	     overflow: unset !important;
+		 position: inherit;
+ }
+.minicart-items-wrapper {
+    .lib-css(border, 1px solid @minicart__border-color);
+    .lib-css(margin, 0 -@minicart__padding-horizontal);
+    border-left: 0;
+    border-right: 0;
+    overflow-x: auto;
+    padding: 15px;
+    height: auto !important;
+    max-height: 320px !important;
+}
+.downloads-item {
+    margin-top: 15px;
+}
+button#btn-minicart-close {
+    display: none;
+	
+}
+@media(min-width:800px){
+	.authentication-wrapper{
+		margin-top:-100px;
+		margin-right: 50px;
+	}
+}
+.abs-colon:after, .block-minicart .subtotal .label:after, .minicart-items .details-qty .label:after, .minicart-items .price-minicart .label:after, .order-details-items .order-gift-message .label:after, .order-details-items .block-order-details-gift-message .label:after, .block-wishlist-management .wishlist-select .wishlist-name-label:after {
+	color:#333;
+}
+@media (min-width: 768px), print{
+.opc-wrapper {
+	    width: 66.666667%;
+    float: left;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+    padding-right: 30px;
+}
+}
+
+@media (width: 768px), print{
+.opc-sidebar {
+    margin: 46px 0 20px;
+    width: 33.33333333%;
+    float: right;
+ -ms-flex-order: 2;
+}
+}
+.product-attachment-container .downloads-item .item-icon {
+    width: 20px;
+    height: 16px;
+    padding-top: 3px;
+}
+.label, .label span {
+    color: #333333;
+    white-space: normal;
+}
+.catalog-product-view .columns .column.main {
+	padding-bottom:0px !important;
+}
+.downloads-item .item-icon, .downloads-item .item-link, .downloads-item .item-info {
+    display: inline-block;
+}
+.product-attachment-container .section-files {
+    padding: 0 0 10px 10px;
+}
+.help-block .text-smalll {
+    font-size: 16px;
+	    margin-top: -10px !important;
+    font-family: "Conv_Avenir_45_Book";
+}
+.product-info-main .product-full-width-section .product-section-title {
+    font-size: 18px;
+    color: #333333;
+    padding-left: 0;
+    display: inline-block;
+    padding: 0;
+    font-family: "Avenir Black";
+}
+.catalog-product-view .product-info-price .product-info-stock-sku .stock.available,.product-info-main .stock.available,.catalog-product-view .product-info-main .product.attribute.sku .type{
+	display:none !important;
+}
+/* .product-info-stock-sku .product.attribute.sku .value{ */
+	/* float:left !important; */
+/* } */
+.page-main .wrap-content .wrap-right li.product-wrapper span.btn-delete {
+    position: absolute;
+    font-family: 'luma-icons';
+    right: 5px;
+    z-index: 1;
+    top: 0;
+    padding: 5px 10px;
+    color: #ff8100;
+}
+.page-main .wrap-content .wrap-right li.product-wrapper {
+    border: 1px solid #CCC;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.page-main .wrap-content .wrap-right li.product-wrapper > a {
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+}
+.page-main .wrap-content .wrap-right li > a > img {
+    width: 70px;
+    height: 70px;
+}
+.page-main .wrap-content .wrap-right li.product-wrapper .product-name {
+    font-size: 15px !important;
+    line-height: 1.5;
+    max-width: unset !important;
+    color: #666666;
+    padding-right: 15px;
+    font-family: 'Avenir medium';
+    padding-left: 20px;
+}
+.page-main .wrap-content .wrap-right li.product-wrapper span.btn-delete:before {
+    content: '\e616';
+    position: absolute;
+}
+.panel{
+	border-radius:0px !important;
+}
+li.level1.nav-1-5.category-item.ui-menu-item(2n+1)
+{
+	float:right;
+	display: block ;
+}
+@media (min-width: 768px){
+.home-content.wrap.container {
+    padding: 0 20px !important;
+    margin: 0 -10px !important;
+}
+}
+span.swatch-attribute-selected-option {
+	display:none !important;
+}
+.catalog-product-view .product-info-main .product-info-stock-sku{
+	font-size:15px;
+	margin-top:50px;
+	font-weight:600;
+	display: block;
+    text-align: left;
+    width: 100%;
+    padding-left: 0;
+}
+.catalog-product-view .product.attribute.sku {
+    text-transform: uppercase;
+    font-family: "Avenir Black";
+}
+.catalog-product-view .product-info-main .product.attribute.overview{
+	color:#666666;
+	display:inline-block;
+	margin-top:0;
+	font-family:"Open Sans";
+	font-size:15px;
+	font-weight:300;
+	margin-bottom:0px
+}
+
+
+
+.catalog-product-view .product-addto-links, .catalog-product-view .product-social-links{
+	display:none !important;
+}
+.catalog-product-view .col-left {
+    width: 56.3%;
+}
+.catalog-product-view span.base{
+	font-size: 26px;
+    font-weight: 600;
+    font-family: 'Open Sans';
+}
+
+
+/* .navigation li.level0 { */
+   /* position: unset !important;  */
+/* } */
+
+
+
+
+.toolbar.toolbar-products .pages{
+	display:none;
+}
+/* .catalog-category-view li.item.product.product-item:not(:last-child){ */
+	/* margin-right:30px; */
+/* } */
+.catalogsearch-result-index .category-view{
+	margin-left: calc(-100vw / 2 + 100% / 2) !important;
+    margin-right: calc(-100vw / 2 + 100% / 2) !important;
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+.catalogsearch-result-index .first-wrap-category{
+	background: #105a99;
+    border-radius: 5px;
+}
+.catalogsearch-result-index .second-wrap-category{
+	max-width: 1170px;
+    margin: auto;
+    padding: 32px 15px;
+}
+.catalogsearch-result-index .category-view .category-name{
+	font-size: 36px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    max-width: 50%;
+    position: relative;
+}
+.catalogsearch-result-index .category-view .category-name>img {
+  vertical-align: initial;
+  position: absolute;
+  left: -60px;
+  top: 20px;
+}
+.catalog-category-view .products-grid li.item.product.product-item{
+	width:calc(25% - 23px) ;
+
+	padding:0;
+}
+.catalogsearch-result-index .category-view h1.page-title{
+	display: inline-block;
+    line-height: 1.2;
+}
+.catalogsearch-result-index .category-view .span.base{
+	font-size: 30px;
+    font-family: 'Conv_Avenir_45_Book';
+}
+.catalogsearch-result-index .page-layout-2columns-left .column.main > * {
+    margin: 0 15px;
+}
+.catalogsearch-result-index .browse-cat{
+	text-transform: uppercase;
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 25px !important;
+    margin-top: 30px !important;
+}
+.catalogsearch-result-index strong.product.name.product-item-name{
+	height: 75px;
+    display: inline-block;
+    overflow: hidden;
+	margin-bottom: 20px;
+}
+.catalogsearch-result-index strong.product.name.product-item-name>a{
+	color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    text-decoration: none;
+    display: inline-block;
+}
+.catalogsearch-result-index a.more-details>img{
+	float:right;
+}
+@media(max-width:768px){
+.products {
+    
+	    padding: 0px  !important;
+}
+}
+@media(max-width:768px){
+	.page-products .columns{
+		padding-top:0px !important;
+	}
+}
+.products {
+    
+	    padding: 30px 0 ;
+		margin:0px !important;
+}
+.catalogsearch-result-index .mst-search_result-tabs>li:last-child{
+	margin-right:0px;
+}
+.catalog-category-view .browse-cat {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.catalog-product-view .product-description {
+    margin-top: 45px;
+    font-family: 'Avenir Light';
+}
+.catalog-product-view .product-description .label {
+    font-size: 18px;
+    color: #333333;
+    padding-left: 0;
+    margin-bottom: 30px;
+    display: inline-block;
+    padding: 0;
+    font-family: "Avenir Black";
+}
+.product-info-main .product-full-width-section .product-section-title{
+	font-size:18px;
+	color:#333333;
+	padding-left:0;
+	display:inline-block;
+	padding:0;
+	font-family:"Avenir Black";
+}
+.product-info-main .product-attachment-container{
+	padding-left:0;
+	padding-right:0;
+	margin-bottom:30px;
+	display:grid;
+}
+.product-attachment-container{
+	margin-top:4px;
+	margin-bottom:7px;
+	padding:7px;
+}
+.product-info-main .product-attachment-container .section-title {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
+    position: relative;
+    line-height: 45px;
+    border-bottom: 1px solid #CCC;
+    cursor: pointer;
+    order: 2;
+}
+.product-info-main .product-attachment-container .section-title:after{
+	position:absolute;
+    content: '\e622';
+	right:0;
+	font-size:17px;
+	font-family:'luma-icons';
+	color:#e3e3e3;
+	
+}
+element.style {
+    margin-bottom: 25px;
+}
+
+.catalog-category-view .browse-by-category a.child-cat{
+	flex: 0 1 calc(33.333% - 25px);
+    background: #4b7389;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    border: 1px solid #4b7389;
+}
+.catalog-category-view .browse-by-category a.child-cat:after{
+	background:url("../img/vector-right-white.png");
+	content:'';
+	width: 17px;
+    height: 20px;
+    float: right;
+    background-repeat: no-repeat !important;
+}
+.page-products .columns{
+	padding-top:30px !important;
+}
+.catalog-category-view .browse-by-category {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.catalog-category-view .product-item-info{
+	width:100%;
+}
+.catalog-category-view .product-item-info{
+	border:1px solid gainsboro;
+	border-radius:5px;
+	padding:20px !important;
+	box-shadow:rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.page-main .item.product.product-item:hover{
+	box-shadow:0px 0px 0px 0px #868484;
+	border-radius:5px;
+}
+@media (min-width: 640px){
+.products-grid .product-item-inner{
+	border:0px ;
+	box-shadow: none;
+	}
+}
+.column.main .toolbar.toolbar-products .toolbar-amount{
+	font-size: 16px;
+    font-weight: 700;
+    left: 50%;
+    position: absolute;
+}
+/* .product.actions.product-item-actions,.product-item-inner { */
+
+    /* display: none; */
+/* } */
+
+
+@media (min-width: 640px){
+.products-grid .product-item-info:hover, .products-grid .product-item-info.active {
+	margin:0 !important;
+}
+}
+
+.catalogsearch-result-index .filter-top .filter {
+    cursor: pointer;
+}
+.catalog-category-view .products-grid .product-item-info:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin: 0;
+    padding: 20px;
+}
+.product-reviews-summary.short {
+    display: none;
+}
+.catalog-category-view .product-top-info {
+    position: relative;
+}
+.catalog-category-view strong.product.name.product-item-name{
+	    min-height: 75px;
+	    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+.catalog-category-view .swatch-attribute.color {
+    display: none;
+}
+.catalog-category-view .category-view .category-name>img {
+    position: absolute;
+    left: -70px;
+    top: 10px;
+    display: inline-block;
+}
+.catalog-category-view strong.product.name.product-item-name>a{
+	color:#000;
+	font-size:16px;
+	font-weight:600;
+	line-height:25px;
+	text-decoration:none;
+	display:inline-block;
+}
+.contact-us.item.level0.level-top.desktop.ui-menu-item a{
+        width: 180px;
+		color: #fff !important;
+	    margin-right: 15px;
+		font-size: 15px;
+	    text-align: center;
+		right: 0px;
+		background: #cd2027 !important;
+}
+.block-static-block.widget, .block-cms-link.widget {
+    margin-bottom: 5px;
+}
+.footer.content {
+    border-top: 1px solid #002954;
+    padding-top: 20px;
+}
+.page-footer {
+    margin-top: 0px;
+}
+.owl-carousel .owl-nav button.owl-prev:before{
+	content:"\f053";
+	font-family:'Font Awesome 5 Free';
+	color:#105a99;
+	font-size:20px;
+	font-weight:700;
+	display:none;
+}
+.minicart-items .product-item-details {
+     padding-left: 5px; 
+}
+li.level1.category-item>a.ui-menu-item-wrapper span.ui-menu-icon.ui-icon.ui-icon-caret-1-e {
+    color: #105a99;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 19px !important;
+    margin-right: 10px;
+    height: 17px;
+    display: inline-block;
+    background: url(../img/vector-down.png) !important;
+}
+li.level1.category-item>a.ui-menu-item-wrapper span {
+    font-size: 14px;
+color: #3a3a3a;
+}
+
+li.level1.nav-1-4.category-item.ui-menu-item.ui-menu-item-wrapper.ui-state-active span,li.level1.nav-1-6.category-item.ui-menu-item.ui-menu-item-wrapper.ui-state-active span,li.level1.nav-1-5.category-item.ui-menu-item.ui-menu-item-wrapper.ui-state-active span{
+	color: #105a99;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 19px !important;
+    margin-right: 10px;
+    height: 17px;
+    display: inline-block;
+    background: url(../img/vector-down.png) !important
+}
+li.level1.category-item.ui-menu-item {
+    float: left;
+    width: 25%;
+    padding-right: 25px;
+  /* padding: 0 15px; */
+}
+@media (min-width: 768px){
+.navigation li.level0.first>a {
+    padding-left: 15px;
+}
+}
+.form.contact .actions-toolbar {
+    max-width: calc(50% - 15px);
+    height: 40px;
+}
+.form.contact .actions-toolbar .primary {
+    width: 100%;
+}
+.form.contact .actions-toolbar .primary .action {
+    width: 100%;
+    background: #4bb9bb;
+    height: 40px;
+    font-family: 'Avenir Black';
+    font-size: 17px;
+    border-color: #4bb9bb;
+	    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+li.level1.nav-3-1.category-item.first.ui-menu-item,li.level1.nav-3-2.category-item.ui-menu-item,li.level1.nav-3-3.category-item.ui-menu-item,li.level1.nav-3-4.category-item.ui-menu-item {
+    display: contents;
+}
+
+@media only screen and (max-width: 768px){
+.navigation .submenu > li {
+     word-wrap: unset !important;
+}
+}
+/* ul.level1.submenu.ui-menu.ui-widget.ui-widget-content.ui-front.expanded {
+    padding: 0 15px;
+} */
+.navigation .level0 .submenu a {
+    min-height: 40px;
+    display: flex;
+    line-height: 1;
+    text-align: left;
+    align-items: center;
+}
+li.level1.category-item.ui-menu-item>ul>li span{
+	font-family: "Avenir LT Pro 55 Roman";
+    font-size: 13px;
+}
+li.level1.category-item.ui-menu-item>ul>li {
+	
+    box-shadow: none;
+    /* display: inline-block; */
+    width: 100%;
+}
+.product-item-details, .product-item-name, .details-qty.qty label.label  {
+    color: #333;
+}
+.product-item-inner .product.actions.product-item-actions .actions-secondary{
+	display:none !important;
+	
+}
+.catalog-product-view.action.tocart.primary{
+	width:100%;
+}
+/* .subtotal { */
+    /* display: none; */
+/* } */
+.actionn.submit-enquiry {
+    margin-top: -20px;
+}
+.catalog-product-view .product-btn-wrap a.call-us-btn{
+	background:#fff;
+	color:#333;
+	font-size:15px;
+	display:block;
+	width:100%;
+	text-align:center;
+	padding:15px;
+	padding-bottom:12px;
+	padding-top:12px;
+	border-radius:5px;
+	text-decoration:none;
+	font-weight:bold;
+	margin-top:10px;
+}
+.catalog-product-view .product-btn-wrap a.call-us-btn img{
+	float:right;
+}
+ul.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all
+ {
+    min-width: 210px;
+    padding-left: 15px !important;
+    padding-top: 10px !important;
+    padding-bottom: 30px !important;
+    padding-right: 15px !important;
+}
+.catalog-product-view .product-btn-wrap .action.primary.tocart{
+	background:#00873b;
+	color:#000;
+	font-size:15px;
+	display:block;
+	width:100%;
+	text-align:center;
+	padding:15px;
+	padding-top:12px;
+	padding-bottom:12px;
+	border-radius:5px;
+	text-decoration:none;
+	font-weight:bold;
+	margin-top:10px;
+	
+	
+}
+.catalog-product-view .product-btn-wrap .action.primary.tocart:after{
+	    background: url(../img/vector-right-white.png);
+    content: '';
+    width: 17px;
+    height: 20px;
+    float: right;
+    background-repeat: no-repeat !important;
+
+}
+.catalog-product-view .action.tocart.primary{
+	
+
+	border-radius: 5px !important;
+}
+.catalog-product-view .category-view,.catalog-product-view .first-wrap-category,.catalog-product-view .main-wrap,.catalog-product-view .second-wrap-category,.catalog-product-view .category-name {
+    display: contents;
+} 
+.catalog-product-view .product.media{
+	background:#fff;
+	margin-bottom:0px;
+	/* max-width:650px; */
+	/* float:right; */
+	width:100% !important;
+}
+@media only screen and (max-width: 768px){
+.cart-totals {
+    padding-left: 0px !important;
+    padding-right: 15px;
+}
+}
+/* @media (min-width: 768px), print{ */
+/* .cart.table-wrapper .item .col.item { */
+    /* padding: 20px 8px 20px 0 !important; */
+/* } */
+/* } */
+/* @media (min-width: 768px), print{ */
+/* .cart.table-wrapper .product-item-details { */
+    /* display: table-cell; */
+    /* padding-bottom: 35px; */
+    /* vertical-align: top; */
+    /* white-space: normal; */
+    /* width: 99%; */
+/* } */
+/* } */
+.catalog-product-view  span.price-label,.availability.only.configurable-variation-qty{
+	display:none !important;
+}
+.login-container .block .block-title {
+	  margin:0px !important;
+	      font-family: 'Avenir Black';
+		      border-bottom: 0px solid #e8e8e8;
+    color: #333;
+}
+.login-container .block .block-title strong{
+	font-size:17px !important;
+	padding-left: 0px;
+}
+.login-container .block-content {
+    border-top: 1px solid #e8e8e8;
+}
+.password-strength-meter {
+    font-family: 'Avenir LT Pro 55 Roman';
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 40px;
+    line-height: 40px;
+    max-width: 365px;
+    width: 100%;
+}
+.opc-block-summary .product-item .product-item-inner{
+	    padding-top: 5px;
+    padding-left: 60px !important;
+    display: flow;
+}
+.block-minicart.block li.item.product.product-item {
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-right: 0 !important;
+}
+.catalog-category-view a.more-details>img{
+	float:right;
+}
+.catalog-category-view a.more-details{
+	font-size:15px;
+	font-weight:600;
+	color:#fff;
+	text-decoration: none;
+	display:inline-block;
+	border-radius:5px;
+	width:100%;
+	background: #006bb4;
+	text-align:center;
+	padding:14px;
+	margin-top:0px;
+}
+.catalog-category-view .toolbar.toolbar-products{
+	position: relative;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+@media(min-width:640px){
+	.products-grid .product-item-info:hover, .products-grid .product-item-info.active {
+		margin:0 !important;
+	}
+}
+.catalog-product-view li.product-item {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0;
+}
+.level0.nav-4.category-item.last.level-top.parent.ui-menu-item ul.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-front{
+	width: 160px
+}
+.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-front>a>span {
+    display: block !important;
+}
+.level0.nav-4.category-item.last.level-top.parent.ui-menu-item ul.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-front a.span{
+	    border-bottom: 1px solid #fff;
+		font-family: "Avenir LT Pro 55 Roman";
+		font-size: 13px;
+}
+
+#minicart-content-wrapper >p.title{
+color:#105a99;
+font-family:'Avenir Black';
+font-size:15px;
+margin-bottom:0;
+}
+.block-minicart.block li.item.product.product-item > .product {
+    display: flex;
+    align-items: center;
+}
+.main-wrapp{
+	justify-content:center;
+	display:flex;
+	flex-wrap:wrap;
+}
+.block-search input {
+	color:#333;
+    
+}
+ul.submenu.expanded a.ui-menu-item-wrapper {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-family: "Avenir LT Pro 55 Roman";
+}
+.owl-carousel .owl-nav button.owl-next:before{
+	content:"\f054";
+	font-family:'Font Awesome 5 Free';
+	color:#105a99;
+	font-size:20px;
+	font-weight:700;
+        display:none;
+}
+#google_translate_element .goog-te-gadget-simple
+{ border-radius: 4px;
+ white-space: nowrap;
+ font-size: 12px; 
+line-height: 26px; 
+height: 30px;}
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value{
+text-decoration: none !important;
+font-family: 'Avenir LT Pro 55 Roman';}
+.goog-te-gadget {
+    font-family: arial;
+    font-size: 11px;
+    color: #666;
+    white-space: nowrap;
+}
+#google_translate_element .goog-te-gadget-simple {
+    border-radius: 4px;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 26px;
+    height: 30px;
+}
+ul.submenu.ui-menu.ui-widget.ui-widget-content.ui-front.expanded{
+border:0;
+box-shadow:none;
+display:block !important;
+    width: 85% !important;
+   
+}
+ul.submenu.ui-menu.ui-widget.ui-widget-content.ui-front{
+width:100%;
+}
+.nav-toggle:before{
+color:#337ab7;
+}
+.goog-te-gadget-simple {
+    background-color: #FFF;
+    border-left: 1px solid #D5D5D5;
+    border-top: 1px solid #9B9B9B;
+    border-bottom: 1px solid #E8E8E8;
+    border-right: 1px solid #D5D5D5;
+    font-size: 10pt;
+    display: inline-block;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+a>span.ui-menu-item-wrapper {
+    font-size: 13px;
+color: #3a3a3a;
+}
+.goog-te-gadget img {
+    vertical-align: middle;
+    border: none;
+}
+.goog-te-gadget-icon {
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 19px;
+    height: 19px;
+    border: none;
+    vertical-align: middle;
+}
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed {
+    color: #000;
+}
+.VIpgJd-ZVi9od-xl07Ob-lTBxed {
+    text-decoration: none;
+    color: #00C;
+    white-space: nowrap;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.VIpgJd-ZVi9od-xl07Ob-lTBxed span {
+    text-decoration: underline;
+}
+.VIpgJd-ZVi9od-xl07Ob-lTBxed img {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.minicart-wrapper {
+    float: right;
+}
+.page-header .panel.wrapper {
+    background: #105a99 !important;
+}
+
+.minicart-wrapper .action.showcart span.text-list {
+    width: auto;
+    padding-left: 10px;
+    font-family: 'Avenir LT Pro 55 Roman';
+    font-size: 13px;
+    display: block;
+    position: unset;
+    height: auto;
+    color: #fff;
+}
+.minicart-wrapper .action.showcart:before {
+    content: '' !important;
+    height: 20px;
+    width: 20px;
+    background: url(../img/list-alt.png);
+}
+.owl-carousel {
+  
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+.block-recent-posts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.baolamroi{
+  background: #001e3e;
+  padding:15px 0 !important;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Conv_Avenir_45_Book";
+}
+.baolamroi .col1{
+  float: left;
+  display: inline-block;
+}
+.baolamroi .baovua4{
+  float:right;
+  padding:0px !important;
+  display: inline-block;
+  height: auto;
+}
+
+.baolamroi .col1 a{
+  font-size: 16px;
+  color: #fff;
+  background: #001e3e
+
+}
+.baovua4{
+  background: #001e3e;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  height: 50px;
+  font-family: "Conv_Avenir_45_Book";
+}
+.contact-index-index .field.captcha {
+    max-width: 100% !important;
+}
+.help-block .btn-white-action{
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 40px;
+  position: relative;
+  max-width: 200px;
+  background: #fff;
+  color: #105a99;
+  font-size: 15px;
+  font-family: "Avenir LT Pro 55 Roman";
+}
+.footer.content ul {
+  padding-right: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none ;
+}
+
+.footer-col .col-title {
+  padding-left: 30px;
+  position: relative;
+}
+
+.help-block {
+ background: url(../img/end-of-main.png);
+  height: 380px;
+  background-repeat: no-repeat;
+  margin: 0 !important;
+  background-size: 100% 380px;
+  background-position: top;
+  padding: 80px 0 70px 0;
+}
+
+.help-block .content-wrap {
+  max-width: 250px;
+  
+}
+.help-block .text-large {
+  font-size: 58px;
+  font-family: "Avenir Black";
+  line-height: 1;
+}
+.help-block .row div:first-child .content-wrap {
+  /* text-align: center !important; */
+ 
+    justify-content: center;
+  max-width: 100% !important;
+}
+.home-content.wrap{
+  padding:0;
+  padding-left:15px ;
+  padding-right: 15px;
+  
+}
+.home-content.container .row.row1{
+  color: #fff;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 60px;
+
+  
+}
+.owl-nav{
+  margin-top: 10px;
+  text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    
+}
+.home-content.wrap.container .row.row1 > div > div{
+  display: flex;
+    width: 100%;
+}
+.home-content.wrap .row.row1 .col1{
+    text-align: left;
+    padding: 15px;
+    border-radius: 4px;
+    background: url(../img/row1-bg-col1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 180px;
+    box-shadow: 0 46px 58px -72px #000;
+}
+.home-content.wrap .row.row1 div a {
+  display: block;
+  text-decoration: none;
+}
+.home-content.wrap .row.row1 .col1 .baovua{
+  margin-bottom: 10px;
+}
+.home-content.wrap .row.row1 .baovua{
+  font-size: 30px;
+  font-family: "Avenir Black";
+  color: #fff;
+  display: block;
+  clear: both;
+  
+  line-height: 1.2;
+}
+.home-content.wrap .row.row1 .vector-down{
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+.home-content.wrap .row.row1 .col2{
+  text-align: left;
+  border-radius: 4px;
+  padding: 15px;
+  background: url(../img/row1-bg-col2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 180px;
+  box-shadow: 0 46px 58px -72px;
+}
+.home-content.wrap .row.row1 .col2 .baovua{
+  margin-bottom: 10px;
+  
+}
+.home-content.wrap .row.row1 .baovua1{
+  font-family: "Avenir LT Pro 55 Roman";
+
+  font-size: 14px;
+  color: #fff;
+}
+.home-content.wrap .row.row1 .col3{
+  text-align: left;
+  border-radius: 4px;
+  padding: 15px;
+  background: url(../img/row1-bg-col3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 180px;
+  box-shadow: 0 46px 58px -72pxs;
+}
+.home-content.wrap .row.row1.baovua1{
+  font-family: "Avenir LT Pro 55 Roman";
+  font-size: 12px;
+  color: #fff;
+}
+.home-content.home-content.container .row{
+  margin-bottom: 50px;
+}
+.home-content.wrap .row2 .col2, .home-content.wrap .row2 .col1 {
+  position: relative;
+  display: block;
+  border-radius: 4px;
+}
+
+@media(max-width:900px){
+  .home-content.wrap .row2 .btn-link{
+    font-size: 14px;
+  }
+}
+.home-content.wrap .row2 .btn-link{
+  color: #fff;
+    font-size: 18px;
+    font-family: "Avenir LT Pro 55 Roman";
+    display: block;
+    position: absolute;
+    height: 50px;
+    line-height: 50px;
+    width: auto;
+    overflow: hidden;
+    bottom: -25px;
+    max-width: 100%;
+    left: 15px;
+    right: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin: auto;
+    border-radius: 4px;
+    background: #808182;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.home-content.wrap .row2 .btn-link img,.home-content.wrap .row3 .btn-link img {
+  float: right;
+  margin-top: 17px;
+  padding-right: 30px;
+}
+.home-content.wrap .row3 .baoqua{
+  border-radius: 4px;
+  position: relative;
+  display: block;
+  /* min-height: 160px; */
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+
+.row2> div > div > a > img,.row3> div > div > a > img {
+    border-radius: 5px;
+    height: 100%;
+}
+
+.home-content.wrap .row3 .btn-link{
+  color: #fff;
+  font-size: 18px;
+  font-family: "Avenir LT Pro 55 Roman";
+  display: block;
+  position: absolute;
+  height: 50px;line-height: 50px;
+  width: auto;
+  overflow: hidden;
+  bottom: -25px;
+  max-width: 100%;
+  left: 15px;
+  right: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin: auto;
+  border-radius: 4px;background: #808182;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.row3> div > div > a > img  {
+  width: 100%;
+}
+.row2> div > div > a > img{
+  width: 100%;
+}
+.home-content.wrap .row3 .btn-link img{
+  float: right;
+  margin-top: 17px;
+  /* padding-right: 30px; */
+}
+.block-log-recent-post.block{
+  background: #dbe6f0;
+  margin-bottom: 5px;
+  padding-bottom: 20px;
+  /* margin-left: 15px; */
+}
+.block-log-recent-post .container{
+  padding: 0 !important;
+}
+.block p:last-child {
+  margin: 0;
+}
+.block-title{
+  max-width: max-content;
+  margin: 25px auto !important;
+  text-align: left;
+  margin-top: 40px  !important;
+}
+.block-title strong {
+  font-size: 44px !important;
+  position: relative;
+  padding-left:50px;
+  font-family: 'Avenir Black';
+}
+.block-title strong img {
+ left: -5px;
+  top: 10px;
+  position: absolute;
+  height: 42px;
+  width: 43px;
+}
+.owl-carousel .col12{
+     transform: translate3d(-8970px, 0px, 0px);
+    transition: all 0s ease 0s;
+    width: 35490px;
+    position: relative;
+    
+    touch-action: manipulation;
+}
+.block-blog-recent-post.block {
+  background: #dbe6f0;
+  margin-bottom: 5px;
+  padding-bottom: 20px;
+}
+.block-recent-posts .block-recent-posts-item {
+  margin: 0 15px 35px 15px;
+  max-width: 285px;
+}
+
+.owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  /* height: 415; */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 0;
+}
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  /* max-height:  357px;  */
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+.owl-stage{
+   /* transform: translate3d(-8970px, 0px, 0px); 
+  transition: all 0s ease 0s;  */
+  width: 35490px;
+}
+.row-footer {
+  padding-bottom: 0;
+}
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* -webkit-transform: translate3d(0px, 0px, 0px); */
+}
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+  touch-action: manipulation;
+  /* -moz-backface-visibility: hidden; */
+}
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.fa.fa-angle-double-right{
+  position: absolute;
+    top: 10px;
+    bottom: 10px;
+    right: 15px;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 20px;
+    height: 19px;
+}
+.block-blog-recent-post .block-recent-posts .block-recent-posts-item {
+  max-width: unset;
+}
+.block-blog-recent-post .block-recent-posts .recent-post-featured-image-link{
+  max-width: unset;
+  max-height: unset;
+  margin-bottom: 0;
+}
+.block-recent-posts-item.item a.recent-post-featured-image-link img {
+  max-height: 240px;
+  min-width: none;
+ 
+}
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+}
+
+.link-wrap {
+  padding: 20px;
+  background: #fff;
+
+}
+.block-blog-recent-post .btn.btn-readmore {
+  margin-top: 0;
+}
+.btn.btn-readmore {
+  font-size: 15px;
+  font-family: 'Open Sans';
+  background: #105a99;
+  color: #fff;
+  text-align: center;
+  display: block;
+  height: 40px;
+  position: relative;
+  line-height: 27px;
+  margin-top: 20px;
+}
+.block-blog-recent-post .block-recent-posts .block-recent-posts-link {
+  min-height: 95px;
+  display: block;
+  /* padding-bottom: 20px; */
+  
+}
+
+.block-recent-posts .block-recent-posts-link {
+  text-decoration: none;
+  color: #333333;
+ 
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.4;
+}
+.block-recent-posts-link {
+  font-size: 18px;
+  font-family: 'Avenir Black';
+}
+.block-blog-recent-post .block-recent-posts .block-recent-posts-link {
+  padding-bottom: 20px;
+}
+
+.owl-theme .owl-dots, .owl-theme .owl-nav{
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; 
+  margin-top: 15px;
+}
+.owl-carousel.owl-theme .owl-dots .owl-dot span {
+  background: #fff;
+  border: 1px solid #105a99;
+  width: 15px;
+  height: 15px;
+  margin: 5px 5px;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity .2s ease;
+  border-radius: 30px;
+}
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+}
+
+li.level0>a.level-top {
+    font-size: 16px;
+    font-family: "Avenir LT Pro 55 Roman";
+}
+.sky{
+  font-family: 'Conv_Avenir_45_Book';font-size: 18px;padding-left: 50px;color: #666666;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+  background: #105a99 !important;
+}
+
+
+
+.block-recent-posts.owl-theme .owl-nav [class*=owl-] {
+  position: absolute;
+  height: 50px;
+  top: 0;
+  width: 50px;
+  border-radius: 50px;
+  bottom: 0;
+  margin: auto !important;
+  transition: 0.5s;
+}
+
+.block-recent-posts.owl-theme .owl-nav [class*=owl-] {
+  position: absolute;
+  height: 50px;
+  top: 0;
+  width: 50px;
+  border-radius: 50px;
+  bottom: 0;
+  margin: auto !important;
+  transition: 0.5s;
+}
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+}
+.owl-theme .owl-nav [class*=owl-] {
+  color: #FFF;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: #D6D6D6;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-dot {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+button:not(.primary) {
+  box-shadow: none;
+}

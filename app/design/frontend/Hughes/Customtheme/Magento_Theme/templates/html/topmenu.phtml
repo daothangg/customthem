@@ -1,0 +1,37 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/**
+ * Top menu for store
+ *
+ * @var $block \Magento\Theme\Block\Html\Topmenu
+ */
+
+$columnsLimit = $block->getColumnsLimit() ?: 0;
+$_menuHtml = $block->getHtml('level-top', 'submenu', $columnsLimit)
+?>
+
+<nav class="navigation" data-action="navigation testcase">
+    <ul class="ui-menu ui-widget ui-widget-content ui-corner-all ui-menu-icons" data-mage-init='{"menu":{"responsive":true, "expanded":true, "position":{"my":"left top","at":"left bottom"}}}'>   
+	<?= /* @noEscape */ $_menuHtml?>
+	<!--<li class="level0 nav-2 category-item level-top ui-menu-item"><a href="<?php echo $this->getUrl('for-hire') ?>" class="level-top ui-menu-item-wrapper" id="ui-id-3" tabindex="-1" role="menuitem"><span>For Hire</span></a></li>
+	<li class="item level0 category-item level-top parents col1-static   ui-menu-item" role="presentation"><a class="level-top ui-corner-all ui-state-active" id="ui-id-4" tabindex="-1" role="menuitem">Service &amp; Support</a> <ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all " style="padding: 20px 15px; display: block; top: 50.3333px; left: -0.3125px;" role="menu" aria-expanded="true">
+<li class="category-item  ui-menu-item"><a class="ui-corner-all" href="/gb/service/">Service &amp; Maintenance</a></li>
+<li class="category-item  ui-menu-item"><a class="ui-corner-all" title="Weekly Activation" href="/gb/weekly-activation/" target="_self">Weekly Activation Test</a></li>
+<li class="category-item  ui-menu-item"><a class="ui-corner-all " href="/gb/spare-parts/">Spare Parts</a></li>
+<li class="category-item  ui-menu-item"><a class="ui-corner-all " title="Onsite Legionella Testing" href="/gb/legionella/" target="_self">Managing Legionella Risk</a></li>
+</ul></li>
+    <li class="level0 nav-2 category-item level-top ui-menu-item"><a href="https://b1e0bb8826.nxcli.io/index.php/where-to-buy.html" class="level-top ui-menu-item-wrapper ui-state-active" id="ui-id-17" tabindex="-1" role="menuitem"><span>Where to buy</span></a></li>-->
+	<li class="contact-us item level0 level-top mobile ui-menu-item" role="presentation"><a id="" class="level-top ui-corner-all" tabindex="-1" role="menuitem" href="<?php echo $this->getUrl('contact') ?>">Contact Us</a></li>
+
+<li class="contact-us item level0 level-top desktop ui-menu-item" role="presentation">
+<a id="ui-id-8" class="level-top ui-corner-all" tabindex="-1" role="menuitem" href="<?php echo $this->getUrl('contact') ?>"> Contant Us 
+		<img style="float: right; margin-top: 15px;" src="<?= $block->getViewFileUrl('img/vector-right.png'); ?>" alt="" />
+
+ </a></li>
+   </ul>
+   
+</nav>

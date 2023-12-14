@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Created By : Rohan Hapani
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    layout="1column"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        
+	 <script src="Magento_Theme::js/owlcarousel/owl.carousel.js" async="async" />
+	<script src="Magento_Theme::js/owlcarousel/owl.carousel.min.js" async="async" />
+	<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" src_type="url" />  -->
+	 <css src="Magento_Theme::css/owl.carousel.css"/>
+
+     <script src="Magento_Theme::js/owlcarousel/owlcarousel.js" async="async" />
+    </head>
+    <body>
+        <referenceContainer name="page.bottom.container">
+            <block class="Magento\Framework\View\Element\Template"
+                name="proslider" after="-"
+                template="Magento_Theme::html/slider.phtml" />
+        </referenceContainer>
+    </body>
+</page>

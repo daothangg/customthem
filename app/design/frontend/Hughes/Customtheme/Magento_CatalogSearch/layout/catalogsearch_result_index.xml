@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        
+        <referenceContainer name="content">
+		<!-- <block class="Magento\CatalogSearch\Block\Result" name="search.result" template="Magento_CatalogSearch::result.phtml"> -->
+                <!-- <block class="Magento\CatalogSearch\Block\SearchResult\ListProduct" name="search_result_list" template="Magento_Catalog::product/list.phtml"> -->
+                
+				 <!-- <block class="Magento\Framework\View\Element\Template" name="search.tooolbar"  template="Magento_CatalogSearch::tooobar.phtml"> -->
+					<!-- </block> -->
+					 <!-- <action method="setToolbarBlockName"> -->
+                        <!-- <argument name="name" xsi:type="string">search.tooolbar</argument> -->
+                    <!-- </action> -->
+			<!-- </block> -->
+	<!-- </block> -->
+    <block class="Magento\Framework\View\Element\Template" name="search.category"  before="-"  template="Magento_CatalogSearch::BROWSE-BY_CATEGORY.phtml">
+               </block>
+			   <!-- <block class="Magento\Framework\View\Element\Template" name="search.filter"  before="-"  template="Magento_CatalogSearch::filter.phtml"> -->
+               <!-- </block> -->
+			           
+
+        </referenceContainer>
+		<move element="search.filter" destination="content" after="search.category"/>
+		      <move element="product_list_toolbar_pager" destination="content" after="-"/>
+
+    </body>
+</page>

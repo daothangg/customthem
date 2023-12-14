@@ -1,0 +1,5 @@
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/theme.xsd">
+     <title>Customtheme</title> 
+     <parent>Magento/luma</parent> <!-- Theme cha, theme này được xây dựng dựa trên theme blank -->
+    
+ </theme>

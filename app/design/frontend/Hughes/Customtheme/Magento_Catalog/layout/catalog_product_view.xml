@@ -1,0 +1,118 @@
+
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <!-- <header><script src="Magento_Catalog::js/toggle.js" async="async" /></header> -->
+	<head>
+	 <script src="Magento_Catalog::js/jqueryy.js" async="async" />
+	<!-- <script src="Magento_Catalog::js/product/qty.js" async="async" /> -->
+	 <script src="Magento_Swatches/js/swatch-renderer.js" async="async" />
+	</head>
+    <body>
+	  <referenceBlock name="product.info.addtocart.additional">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">Magento_Catalog::product/view/addtocart.phtml</argument>
+            </action>
+        </referenceBlock>
+        <referenceBlock name="product.info.addtocart">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">Magento_Catalog::product/view/addtocart.phtml</argument>
+            </action>
+        </referenceBlock>
+		
+	<!-- <move element="product.info.details " destination="product.info.main" after="product.info"/> -->
+	<block class="Magento\Catalog\Block\Product\View" name="custom-suitabilities" after="-" template="Magento_Catalog::product/list/suitabilities.phtml" />
+	   <block class="Magento\Catalog\Block\Product\View" name="title" after="product.view.container" template="Magento_Catalog::product/list/title.phtml" />
+	     <referenceBlock name="page.main.title">
+             <block class="Magento\Catalog\Block\Product\View" name="items" after="custom-attribute" template="Magento_Catalog::product/view/custom-attribute.phtml" />  			 
+        </referenceBlock>
+		 <!-- <referenceBlock name="page.main.suitabilities"> -->
+             <!-- <block class="Magento\Catalog\Block\Product\View" name="suitabilities" after="items" template="Magento_Catalog::product/suitabilities.phtml" />  			  -->
+        <!-- </referenceBlock> -->
+		
+		<referenceBlock name="columns.top">
+           <block class="Magento\Catalog\Block\Product\View" name="product-info-custom" before="-" template="Magento_Catalog::product/view/product-info-custom.phtml" />  			 
+        </referenceBlock>
+		<move element="product-info-custom" destination="product.info.options.wrapper" before="-"/>
+		<!-- <referenceContainer name="columns.top"> -->
+           <!-- <block class="Magento\Catalog\Block\Product\View" name="product-info-custom" after="-" template="Magento_Catalog::product/view/product-info-custom.phtml"/> -->
+		    
+		<!-- </referenceContainer> -->
+		 <referenceBlock name="page.main.title">
+            <arguments>
+                <argument name="css_class" xsi:type="string">product</argument>
+                <argument name="add_base_attribute" xsi:type="string">itemprop="name"</argument>
+            </arguments>
+        </referenceBlock>	
+		 <block class="Magento\Catalog\Block\Product\View\Description" name="product.info.description" as="description" template="Magento_Catalog::product/view/attribute.phtml" group="detailed_info">
+                    <arguments>
+                        <argument name="at_call" xsi:type="string">getDescription</argument>
+                        <argument name="at_code" xsi:type="string">description</argument>
+                        <argument name="css_class" xsi:type="string">description</argument>
+                        <argument name="at_label" xsi:type="string">none</argument>
+                        <argument name="title" translate="true" xsi:type="string">Details</argument>
+                        <argument name="sort_order" xsi:type="string">10</argument>
+						  
+            
+        
+                    </arguments>
+                </block>
+		<!-- <referenceContainer name="content"> -->
+            <!-- <container name="custom.col.left" htmlTag="div" htmlClass="col-left" after="product.info.media" /> -->
+        <!-- </referenceContainer> -->
+		
+			<container name="your.custom.media" htmlTag="div" htmlClass="col-left"/>
+			<container name="your.custom.main" htmlTag="div" htmlClass="col-right"/>
+			<container name="custom.main.wrap" htmlTag="div" htmlClass="main-wrapp"/>
+	<move element="product.info.media" destination="your.custom.media"/>
+	<move element="product.info.main" destination="your.custom.main"/>
+	<move element="your.custom.media" destination="custom.main.wrap" before="-"/>
+	<move element="your.custom.main" destination="custom.main.wrap" after="your.custom.media"/>
+	<move element="custom.main.wrap" destination="content" after="-"/>
+	<!-- <move element="messages" destination="page.main.title" after="-"/> -->
+	<referenceBlock name="product.info.addtocart" remove="true" />
+       <referenceContainer name="columns.top">
+           <block class="Magento\Catalog\Block\Product\View" name="items" after="product.view.container" template="Magento_Catalog::product/list/items.phtml" />
+		  
+		 
+		</referenceContainer>
+		<block class="Magento\Catalog\Block\Product\View\Description" name="product.attributes.Height" template="product/view/attribute.phtml" before="-">
+			<arguments>
+			   <argument name="suitabilitiess" xsi:type="string">itemprop="Height"</argument>
+			</arguments>
+		</block>
+		<move element="product.info.stock.sku" destination="product.info.main" before="-"/>
+	
+		<move element="product.info.overview" destination="product.info.main" after="product.info.stock.sku"/>
+		<!-- <move element="product.info.stock.sku" destination="content" before="product.info.main"/> -->
+		 <move element="page.main.title" destination="product.info.media" before="-"/>
+		 
+		<move element="product.info.description" destination="product.info.main" before="product.info.addto"/>
+		<!-- <referenceBlock name="product.info.reviews.tab" remove="true"> -->
+		<move element="product.add.form" destination="product.info.main" before="product.info.description"/>
+		<!-- <move element="product.info" destination="product.info.price" after="product.price.final"/> -->
+		<move element="product.infor.samples" destination="product.info.main" after="product.info.description"/>
+
+		<referenceBlock name="product.info.details">
+            <referenceBlock name="reviews.tab" remove="true"/>
+        </referenceBlock>
+		
+            <referenceBlock name="product.attributes" remove="true"/>
+			<referenceBlock name="product.info.upsell" remove="true"/>
+			
+       
+		 <referenceBlock name="product.info.review" remove="true"/>
+		
+		 <block class="Magento\Cms\Block\Block" name="product-section-title-Downloads_test"> 
+			<arguments> 
+				<argument name="block_id" xsi:type="string">product-section-title-Downloads</argument> 
+			</arguments> 
+		</block> 
+		<move element="product-section-title-Downloads_test" destination="product.info.main" after="-" />
+		<move element="custom-suitabilities" destination="product.info.media" after="page.main.title" />
+    </body>
+</page>

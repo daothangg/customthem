@@ -1,0 +1,29 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var \Magento\Store\Block\Switcher $block */
+?>
+<?php if (count($block->getGroups())>1) : ?>
+<div class="footer container" id="container">
+    <strong class="label switcher-label"><span><?= $block->escapeHtml(__('Select Store')) ?></span></strong>
+    <div class="row-footer row">
+        <?php foreach ($block->getGroups() as $_group) : ?>
+            <?php if ($_group->getId() == $block->getCurrentGroupId()) : ?>
+                <div class="footer-col col-md-3 col-sm-6 col-xs-12"
+                     role="button"
+                     tabindex="0"
+                     data-mage-init='{"dropdown":{}}'
+                     data-toggle="dropdown"
+                     data-trigger-keypress-button="true"
+                     id="switcher-store-trigger">
+                    <strong class="col-title col-1down">
+                        <span><?= $block->escapeHtml($_group->getName()) ?></span>
+                    </strong>
+                </div>
+            <?php endif; ?>
+        <?php endforeach; ?>
+
+<?php endif; ?>

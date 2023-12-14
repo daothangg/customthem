@@ -1,0 +1,26 @@
+<?php
+$cateroys = $block->getCurrentCategory();
+$categories =  $cateroys->getChildrenCategories();
+// $writer = new \Zend_Log_Writer_Stream(BP . '/var/log/custom.log');
+				// $logger = new \Zend_Log();
+				// $logger->addWriter($writer);
+				// $logger->info('text message');
+				//  $logger->info(print_r($child->getData(),true));
+
+if(count($categories)){
+?>
+<p class="browse-cat">
+<?=  __('browse by category') ?>
+</p>
+<div class="browse-by-category">
+
+	<?php foreach($categories as $child):?>
+		<? if($child->getIsActive() == true):?>
+			<a class="child-cat" href="<? echo $child->getUrl(); ?>"> <? echo $child->getName();?></a>
+			
+			
+		<?php endif;?>
+	<?php endforeach;?>
+</div>    
+
+<?php };?>

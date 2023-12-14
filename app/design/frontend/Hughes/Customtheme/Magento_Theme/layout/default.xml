@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <body>
+        <referenceContainer name="header.top">
+            <referenceBlock class="Magento\Store\Block\Switcher" name="store.settings.language" template="switch/languages.phtml"> </referenceBlock>
+        </referenceContainer>
+        <move element="minicart" destination="header.panel" after="-" />
+        <move element="default" destination="content" after="-" />
+        <referenceBlock name="header.top">
+            <block class="Magento\Framework\View\Element\Template" name="gg-trans" after="-" template="header/gg-trans.phtml" />
+        </referenceBlock>
+        <block class="Magento\Cms\Block\Block" name="home-page">
+            <arguments>
+                <argument name="block_id" xsi:type="string">custom_home</argument>
+            </arguments>
+        </block>
+		  <block class="Magento\Cms\Block\Block" name="lien-he"> 
+        <arguments> 
+            <argument name="block_id" xsi:type="string">custom_lien-he</argument> 
+        </arguments> 
+    </block> 
+	<move element="custom_lien-he" destination="block.search" after="-" />
+        <block name="require.js" class="Magento\Framework\View\Element\Template" template="Magento_Theme::page/js/require_js.phtml" />
+        <referenceBlock name="header" remove="true" />
+        <referenceBlock name="store.links" remove="true" />
+        <referenceBlock name="store.settings" remove="true" />
+        <referenceBlock name="top.links">
+            <referenceBlock name="register-link" remove="true" />
+            <!--for Create Account Link-->
+            <!-- <referenceBlock name="authorizationLink" remove="true" /> -->
+            <!--for Sign In Link  -->
+            <!-- <referenceBlock name="authorization-link-login" remove="true" /> -->
+        </referenceBlock>
+        <referenceContainer name="page-bottom">
+        </referenceContainer>
+		<referenceContainer name="content">
+     <!-- <referenceBlock name="sidebar.main" remove="true"/> -->
+     <!-- <referenceBlock name="sidebar.additional" remove="true"/> -->
+	
+	 
+   </referenceContainer >
+   <referenceBlock name="reviews.actions" remove= "true"/>
+   <referenceBlock name="product-reviews-summary.short">
+            <!-- <referenceBlock name="rating_summary" remove="true"/> -->
+			<!-- <referenceBlock name="reviews_actions" remove="true"/> -->
+        </referenceBlock>
+        <referenceContainer name="footer-container">
+            <container name="footer" as="footer" label="Page Footer" htmlTag="div" htmlClass="footer content">
+                <!-- <referenceBlock name="store_switcher" remove="true" /> -->
+				<!-- <referenceBlock name="product_list_toolbar_pager" remove="true"/> -->			
+                <referenceBlock name="footer_links" remove="true" />
+                <referenceBlock name="report.bugs" remove="true" />
+                <block class="Magento\Theme\Block\Html\Footer" name="copyright" template="Magento_Theme::html/coppyright.phtml" />
+            </container>
+        </referenceContainer>
+    </body>
+</page>

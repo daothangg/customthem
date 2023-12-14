@@ -1,0 +1,11 @@
+var config = {
+    paths: {            
+            'toggle':"Magento_catalog/js/jquery.min"
+	    
+        },   
+    shim: {
+        'toggle': {
+            deps: ['jquery']
+        }
+    }
+};

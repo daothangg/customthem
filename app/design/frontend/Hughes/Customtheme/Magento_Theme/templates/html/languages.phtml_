@@ -1,0 +1,49 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/**
+ * Currency switcher
+ *
+ * @var \Magento\Directory\Block\Currency $block
+ */
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$stores = $objectManager->create('Magento\Store\Api\StoreRepositoryInterface')->getList();
+$conf = $objectManager->get('Magento\Framework\App\Config\ScopeConfigInterface')->getValue("web/unsecure/base_url");
+?>
+
+<?php if (count($block->getStores())>1) : ?>
+    <ul class="header-currency-list">
+
+        <?php foreach ($stores as $store):?>
+            <?php if($store->getCode() == 'admin'){continue;} ?>
+                <?php $viewFileUrl = 'img/'.$store->getCode().'.png'; ?>
+            <li ><a href="<?= $conf.$store->getCode(); ?>" ><img src="<?= $this->getViewFileUrl($viewFileUrl);?>" title="<?= $store->getName(); ?>"/></a></li>
+            <?php endforeach; ?>
+        </ul>
+<?php endif; ?>
+<div class="gg-trans-wrap">
+    <div id="google_translate_element">
+        <div class="skiptranslate goog-te-gadget" dir="ltr" style>
+            <div id=":0.targetLanguage" class="goog-te-gadget-simple" style="white-space: nowrap;">
+            <img src="../img/cleardot.gif" class="goog-te-gadget-icon" style=" background-image: url(../img/te_ctrl3.gif); background-position: -65px 0px;">
+            <span style="vertical-align: middle;">
+            <a aria-haspopup="true" class="VIpgJd-ZVi9od-xl07Ob-lTBxed" href="#">
+                <span>Chọn Ngôn ngữ</span>
+                <img src="../img/cleardot.gif" alt width="1" height="1">
+                <span style="border-left: 1px solid rgb(187, 187, 187);">&ZeroWidthSpace;</span>
+                <img src="../img/cleardot.gif" alt width="1" height="1">
+                <span aria-hidden="true" style="color: rgb(118, 118, 118);">▼</span>
+        </a>
+        </span>
+        </div>
+        </div>
+        </div>
+        <div class="phone-mobile">
+    <a class="tel-number" href="tel:+4401614306618">
+    <i class="fa fa-phone" aria-hidden="true"></i>
+</a>
+</div>
+        </div>

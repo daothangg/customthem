@@ -1,0 +1,22 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+?>
+<?php
+/**
+ * Product list toolbar
+ *
+ * @var $block \Magento\Catalog\Block\Product\ProductList\Toolbar
+ */
+?>
+
+
+<div class="filter-top">
+<span class="filter">Filter</span>
+<img src="<?= $block->getViewFileUrl('/img/arrow-next-filter-label.png'); ?>" alt="Demo" />
+
+
+
+</div>

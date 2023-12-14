@@ -1,0 +1,44 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+?>
+<?php
+/**
+ * Product list toolbar
+ *
+ * @var $block \Magento\Catalog\Block\Product\ProductList\Toolbar
+ */
+?>
+<div class="filter-top">
+<span class="filter-label">Filter
+<img src="<?= $block->getViewFileUrl('/img/arrow-next-filter-label.png'); ?>" alt="Demo" />
+
+</span>
+
+
+<span class="result-count">
+    <?php if ($block->getLastPageNum() > 1) :?>
+        <?= $block->escapeHtml(
+            __(
+                'results %1-%2 of %3',
+                '' . $block->getFirstNum() . '',
+                '' . $block->getLastNum() . '',
+                '' . $block->getTotalNum() . ''
+            ),
+            ['']
+        ) ?>
+    <?php elseif ($block->getTotalNum() == 1) :?>
+        <?= $block->escapeHtml(
+            __('%1 results', '' . $block->getTotalNum() . ''),
+            ['']
+        ) ?>
+    <?php else :?>
+        <?= $block->escapeHtml(
+            __('%1 results', '' . $block->getTotalNum() . ''),
+            ['']
+        ) ?>
+    <?php endif; ?>
+</span>
+</div>

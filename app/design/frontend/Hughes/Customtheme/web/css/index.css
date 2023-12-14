@@ -1,0 +1,2257 @@
+@font-face {
+    font-family: 'Conv_Avenir_45_Book';
+    src: url('../fonts/Avenir_45_Book.eot');
+    src: url('../fonts/Avenir_45_Book.woff') format('woff'), url('../fonts/Avenir_45_Book.ttf') format('truetype'), url('../fonts/Avenir_45_Book.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Avenir LT Pro 55 Roman";
+    src: url("../fonts/AvenirRoman/fonts/Metropolis-Regular.eot");
+    src: url('../fonts/AvenirRoman/fonts/Metropolis-Regular.woff') format('woff'), url('../fonts/AvenirRoman/fonts/Metropolis-Regular.ttf') format('truetype'), url('../fonts/AvenirRoman/fonts/Metropolis-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* @font-face { */
+    /* font-family: "luma-icons"; */
+    /* src: url("https://db.onlinewebfonts.com/t/68590d1f06ad625cb73b5c34f85b4a1b.eot"); */
+    /* src: url("https://db.onlinewebfonts.com/t/68590d1f06ad625cb73b5c34f85b4a1b.eot?#iefix")format("embedded-opentype"), */
+    /* url("https://db.onlinewebfonts.com/t/68590d1f06ad625cb73b5c34f85b4a1b.woff2")format("woff2"), */
+    /* url("https://db.onlinewebfonts.com/t/68590d1f06ad625cb73b5c34f85b4a1b.woff")format("woff"), */
+    /* url("https://db.onlinewebfonts.com/t/68590d1f06ad625cb73b5c34f85b4a1b.ttf")format("truetype"), */
+    /* url("https://db.onlinewebfonts.com/t/68590d1f06ad625cb73b5c34f85b4a1b.svg#Luma-Icons")format("svg"); */
+	 /* font-weight: normal; */
+    /* font-style: normal; */
+/* } */
+
+
+@font-face {
+    font-family: "Avenir Medium";
+    src: url('../fonts/AvenirMedium/fonts/Metropolis-Medium.eot');
+    src: url('../fonts/AvenirMedium/fonts/Metropolis-Medium.woff') format('woff'), url('../fonts/AvenirMedium/fonts/Metropolis-Medium.ttf') format('truetype'), url('../fonts/AvenirMedium/fonts/Metropolis-Medium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Avenir Black";
+    src: url('../fonts/AvenirBlack/fonts/Avenir-Black.eot');
+    src: url('../fonts/AvenirBlack/fonts/Avenir-Black.woff') format('woff'), url('../fonts/AvenirBlack/fonts/Avenir-Black.ttf') format('truetype'), url('../fonts/AvenirBlack/fonts/Avenir-Black.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.minicart-wrapper .block-minicart:before {
+    right: 19px;
+}
+.minicart-wrapper .block-minicart:after {
+    right: 19px;
+}
+@font-face {
+    font-family: "Avenir Light";
+    src: url('../fonts/AvenirLight/fonts/Metropolis-Light.eot');
+    src: url('../fonts/AvenirLight/fonts/Metropolis-Light.woff') format('woff'), url('../fonts/AvenirLight/fonts/Metropolis-Light.ttf') format('truetype'), url('../fonts/AvenirLight/fonts/Metropolis-Light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.checkout-payment-method .payment-method-title {
+    padding: 20px 0;
+    margin: 0;
+    display: flex;
+}
+.minicart-items .update-cart-item {
+    font-size: 1.1rem;
+    margin-left: 5px;
+    height: 36px;
+    vertical-align: top;
+    border-radius: 50%;
+    background: #fff;
+    color: red;
+}
+.catalog-product-view .qty_change {
+    position: relative;
+}
+@media(max-width:480px){
+	.columns.main .item{
+		max-height:200px;
+	}
+}
+.jssort11 {
+    display: none;
+}
+.catalog-product-view .qty_change .decreaseQty {
+    border-right: 0px;
+    border-radius: 4px 0 0 4px;
+   
+    position: absolute;
+    z-index: 55;
+    width: 25px;
+}
+.catalog-product-view .qty_change .increaseQty {
+    border-left: 0px;
+    border-radius: 0px 4px 4px 0;
+        margin-left: 10px;
+    position: absolute;
+    left: 63px;
+    top: 0px;
+    width: 25px;
+}
+.catalog-product-view .field.qty  label.label{
+	    margin: 0 0 0px !important;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Avenir Black';
+    font-size: 13px;
+}
+
+.catalog-product-view .box-tocart .qty_change input.input-text.qty {
+    margin-left: 33px;
+    width: 40px;
+    padding: 0px;
+}
+.contact-index-index .category-view{
+	    margin-left: calc(-100vw / 2 + 100% / 2) !important;
+    margin-right: calc(-100vw / 2 + 100% / 2) !important;
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+.contact-index-index .first-wrap-category {
+   
+    background: #105a99;
+    color: #fff;
+    height: 160px;
+    border-radius: 5px;
+}
+.catalog-product-view button {
+    background: #f8f8f8;
+    border: 0px;
+}
+.catalog-product-view .control {
+    display: flex;
+}
+.catalog-product-view input#qty {
+    width: 40px;
+	text-align: center;
+   
+}
+.catalog-product-view .field.qty {
+    width: 40px;
+    /* border-radius: 5px; */
+}
+.contact-index-index .second-wrap-category{
+	max-width: 1170px;
+    margin: auto;
+    padding: 35px 15px;
+}
+.cart.table-wrapper .control.qty>label{
+	display:flex;
+}
+.cart.table-wrapper .control.qty>label>a.qty.-minus {
+    margin-right: 10px;
+    color: #333;
+	text-decoration: none
+}
+.cart.table-wrapper .control.qty>label>a.qty.-plus {
+    margin-left: 10px;
+	color:#333;
+	text-decoration: none
+}
+.contact-index-index .fieldset .title>img,.contact-index-index .wrap-right .enquiry-wrap .title>img{
+	margin-top: -5px;
+}
+.contact-index-index .category-view .first-wrap-category .second-wrap-category .main-wrap {
+    margin-left: 40px;
+}
+.block-minicart .subtotal{
+	display:none;
+}
+.page-layout-2columns-left .filter-content {
+    margin-top: 30px;
+}
+.catalog-category-view .filter-content {
+    margin-top: 30px;
+}
+.catalog-category-view .filter-options {
+    display: flex;
+    flex-flow: row wrap;
+}
+.catalog-category-view .filter-options-title {
+    font-size: 14px;
+    text-transform: none;
+}
+/* .page-layout-2columns-left .filter-options-content {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    position: static;
+    visibility: visible;
+    width: auto;
+    margin-top: 20px;
+    border-top: 1px solid gainsboro;
+} */
+.catalog-category-view .filter-options-content .item {
+    /* border-bottom: 1px solid gainsboro; */
+    /* padding: 15px 0 !important; */
+    margin-top: 15px;
+    margin-left: 10px;
+    align-items: center;
+    /* text-align: center; */
+    margin-bottom: 5px;
+}
+/* .catalog-category-view .sidebar.sidebar-main {
+    margin-top: -1915px;
+    position: relative;
+    z-index: 2;
+    float: left;
+    margin-left: -237px;
+}
+.catalog-category-view .sidebar.sidebar-additional {
+    margin-top: -1515px;
+    position: relative;
+    z-index: 2;
+    margin-left: -237px;
+} */
+.block.block-wishlist .block-title strong,.block.block-compare .block-title strong{
+    font-size: 44px !important;
+    position: relative;
+    padding-left: 5px;
+    font-family: 'Avenir Black';
+}
+.filter-options-content a {
+    color: #000;
+}
+.catalog-category-view .filter-options-content a {
+    padding-left: 0;
+}
+.filter-options-content .count:after {
+    content: ')';
+}
+.filter-options-content .count:before {
+    content: '(';
+}
+.catalog-category-view .filter-options-content .count {
+    color: #50c2c0;
+}
+.catalog-category-view .filter-option-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    flex: 0 1 calc(33.333% - 20px);
+}
+.cms-page-view:not(.cms-home) .col-left {
+    width: 60%;
+    float: left;
+    padding-right: 45px;
+}
+@media (min-width: 1200px){
+.cms-page-view:not(.cms-home) .col-right {
+    min-height: 680px;
+}
+}
+.col-right {
+    background: #f8f8f8;
+}
+.cms-page-view:not(.cms-home) .col-right {
+    width: 40%;
+    float: right;
+    padding: 30px;
+}
+.cms-page-view .page-main p:not(p.des), .cms-page-view .page-main li, .aw_blog-post-view .page-main li, .aw_blog-post-view .page-main .blog-post-content p {
+    line-height: 1.9;
+    font-size: 15px;
+    font-family: 'Avenir Light';
+    color: #666666;
+}
+.cms-page-view:not(.cms-home) .text-wrap {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 45px;
+}
+.cms-page-view:not(.cms-home) .content-wrap .col-left .text-wrap {
+    margin-bottom: 60px;
+    padding-bottom: 45px;
+}
+.cart.table-wrapper .cart thead tr th.col {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 15px;
+    padding-top: 24px;
+   max-width: 400px;
+}
+@media (min-width: 769px), print{
+.cart.table-wrapper .item .col.item {
+    padding: 20px 8px 20px 0;
+    max-width: 400px;
+}
+}
+input[type="text"], input[type="password"], input[type="url"], input[type="tel"], input[type="search"], input[type="number"], input[type*="date"], input[type="email"] {
+	height:36.5px
+}
+.cart-summary {
+    margin-top: 65px;
+}
+.cart.table-wrapper .product-image-wrapper{
+	position:unset !important;
+}
+.cart.table-wrapper .col.subtotal{
+	padding-right:20px !important;
+}
+.cart.table-wrapper .col.price, .order-items.table-wrapper .col.price, .cart.table-wrapper .col.qty, .order-items.table-wrapper .col.qty, .cart.table-wrapper .col.subtotal, .order-items.table-wrapper .col.subtotal, .cart.table-wrapper .col.msrp, .order-items.table-wrapper .col.msrp{
+	text-align:center !important;
+}
+.cart.table-wrapper .col.price,.cart.table-wrapper .col.qty ,.cart.table-wrapper .col.subtotal {
+    padding-top: 70px !important;
+}
+.cart.table-wrapper .product-item-details {
+    padding-top: 40px !important;
+}
+.cms-page-view:not(.cms-home) .section-title {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.cms-page-view:not(.cms-home) .text-wrap .section-title img {
+    margin-right: 15px;
+}
+.contact-index-index .field-label{
+	font-size: 16px;
+    color: #999999 !important;
+    margin: auto;
+    padding: 0;
+    line-height: 40px;
+    padding-left: 0;
+    font-family: 'Conv_Avenir_45_Book'
+}
+.product-info-main .product-attachment-container .up.section-title:after {
+    content: '\e621' !important;
+    color: #333 !important;
+}
+.contact-index-index .form.contact .title h4, .contact-index-index .wrap-right .title h4 {
+    margin: 0;
+    font-family: 'Open Sans';
+    margin-left: 15px;
+    display: inline-block;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.contact-index-index .form.contact .title, .contact-index-index .wrap-right .title {
+    clear: both;
+    margin-bottom: 15px;
+}
+@media (min-width: 1265px){
+.form.contact .actions-toolbar {
+    max-width: calc(50% - 15px);
+    width: 100%;
+    float: left;
+    margin-top: -20px;
+}
+}
+.form.contact .actions-toolbar {
+    max-width: calc(50% - 15px);
+    height: 40px;
+}
+.contact-index-index .category-view .category-name{
+	font-size:36px;
+	color:#fff;
+	font-weight:600;
+	text-transform:uppercase;
+	margin-bottom: 10px;
+    display: inline-flex;
+    position: relative;
+}
+.contact-index-index .page-title{
+        margin-left: 50px;
+    margin-top: 30px;
+}
+/* .messages { */
+		/* margin-left: 150px; */
+		/* margin-right: 150px; */
+/* } */
+.message.success {
+    margin-left: 100px;
+	margin-right:100px;
+   
+	}
+
+.contact-index-index .details {
+    background: #f8f8f8;
+    width: 100%;
+	padding:30px;
+    display: inline-block;
+    margin-top: 20px;
+	}
+	.contact-index-index .details .field:nth-child(2n+1){
+	float: right;
+    clear: right;
+	}
+	.contact-index-index .details .field{
+    width: 100%;
+    max-width: calc(50% - 20px);
+    display: inline-block;
+	clear: left;
+    float: left;
+	}
+	.form.contact input[type="text"], .form.contact input[type="password"], .form.contact input[type="url"], .form.contact input[type="tel"], .form.contact input[type="search"], .form.contact input[type="number"], .form.contact input[type*="date"], .form.contact input[type="email"], .form.contact .field select {
+    height: 40px;
+    border-radius: 5px;
+}
+.contact-index-index .category-view .category-name>img{
+	    position: absolute;
+    left: -40px;
+    top: -30px;
+    top: 25px;
+    
+    display: inline-block;
+}
+.contact-index-index .column:not(.sidebar-additional) .form.contact {
+    max-width: 650px;
+    width: 100%;
+    display: inline-block;
+    float: left;
+}
+.contact-index-index .page-main .wrap-content {
+    max-width: 1170px;
+    padding: 0 15px;
+    display: flex;
+    margin: 60px auto;
+}
+.minicart-items .product-item-name a{
+	color:#333 !important;
+}
+.wrap-right .content-wrap {
+    padding: 30px;
+    background: #105a99;
+    text-align: center;
+    margin-left: 30px;
+    color: #fff;
+}
+.wrap-right .text-small {
+    font-size: 16px;
+    font-family: "Conv_Avenir_45_Book";
+}
+.wrap-right .text-nor {
+    font-family: "Avenir Black";
+    font-size: 32px;
+}
+.wrap-right .btn-white-action img {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.wrap-right .btn-white-action{
+	display:inline-block;
+	width:100%;height:40px;
+	cursor:pointer;
+	border-radius:4px;
+	text-align:center;
+	line-height:43px;
+	position:relative;
+	max-width:200px;
+	background:#fff;
+	color:#105a99;
+	font-size:15px;
+	font-family:"Avenir LT Pro 55 Roman";
+}
+.minicart-items .product-item-details {
+    padding-left: 10px;
+    width: 100%;
+    align-items: center;
+}
+.minicart-items .product.options,.minicart-items .price-container {
+    display: none;
+}
+.contact-index-index .enquiry-wrap{
+	padding-left:30px;
+}
+@media (max-width: 480px){
+.contact-index-index .first-wrap-category {
+    border-radius: 0px;
+}
+}
+@media (max-width: 480px){
+.contact-index-index .category-view {
+    padding: 0 !important;
+}
+}
+.container-fluidd{
+    margin: 0;
+    position: relative;
+    transition: margin .3s ease-out 0s;
+}
+/* .catalog-category-view .price-box.price-final_price,.catalog-category-view .product-item-inner {
+
+	display:none !important;
+} */
+.catalog-category-view .filter-options-item {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.catalogsearch-result-index li.item.product.product-item:not(:last-child) {
+    margin-right: 30px;
+}
+.catalogsearch-result-index .products-grid li.item.product.product-item {
+    width: calc(25% - 23px) !important;
+    padding: 0;
+    margin-left: 0;
+    margin-bottom: 30px;
+}
+body.catalogsearch-result-index .product-item-info {
+    width: 100%;
+}
+.catalogsearch-result-index .product-item-info {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 20px !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.catalogsearch-result-index .product-top-info {
+    position: relative;
+}
+.catalogsearch-result-index.page-layout-2columns-left .column.main > * {
+    margin: 0 15px;
+}
+.catalogsearch-result-index.page-layout-2columns-left .mst-search_result-tabs {
+    padding: 0;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 30px;
+}
+.catalogsearch-result-index .mst-search_result-tabs {
+    order: 0;
+    display: flex;
+    list-style: none;
+	
+}
+.catalogsearch-result-index .mst-search__result-tabs li a span {
+    font-family: 'Conv_Avenir_45_Book';
+}
+.catalogsearch-result-index .mst-search_result-tabs>li{
+	padding:0;
+	float:left;
+	flex:0 1 calc(33.333% - 20px);
+	margin-right:30px;
+	margin-left: 0;
+    margin-bottom: -1px;
+    margin-top: 5px;
+}
+@media (max-width: 768px){
+body.catalogsearch-result-index .mst-search_result-tabs {
+    display: block;
+		width: 100%;
+    min-height: 90px;
+}
+}
+.catalogsearch-result-index .column.main .toolbar.toolbar-products .toolbar-amount{
+	    font-size: 16px;
+    font-weight: 700;
+    left: 50%;
+
+}
+.catalog-category-view .products.wrapper.grid.products-grid,.catalogsearch-result-index .products.wrapper.grid.products-grid {
+    border-top: 1px solid #ededed;
+}
+.catalogsearch-result-index .filter-top .filter-label, .filter-top .result-count,.catalog-category-view .filter-top .filter-label {
+    font-size: 16px;
+    font-weight: 700;
+}
+.filter-top .filter-label:after {
+    content: "";
+}
+.catalogsearch-result-index .result-count,.catalog-category-view .result-count {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.catalogsearch-result-index .filter-top{
+	margin-top:30px !important;
+
+}
+/* .catalog-product-view .fotorama__stage { */
+    /* left: 112px !important; */
+/* } */
+
+.catalogsearch-result-index .mst-search_result-tabs li a {
+    padding: 3px 0.5em;
+    margin-left: 0px;
+    font-family: 'Avenir Black';
+    color: #333;
+    border: 0;
+    border-bottom: none;
+    text-decoration: none;
+    border-radius: 2px 2px 0 0;
+    text-decoration: none;
+    padding: 25px 15px;
+    margin-left: 0px;
+    border: 0;
+    background: #ededed;
+    font-size: 16px;
+	display: flex;
+}
+.catalogsearch-result-index .more-details{
+	font-size:15px;
+	font-weight:600;
+	color:#fff;
+	display:inline-block;
+	width:100%;
+	text-align:center;
+	background:#105a99;
+	padding: 15px;
+	border-radius:5px;
+	text-decoration:none;
+	margin-top:0;
+}
+.catalogsearch-result-index .more-details>img{
+	float:right;
+}
+.catalogsearch-result-index .mst-search_result-tabs li a:not(.active) {
+    border-bottom: 1px solid #ededed;
+}
+.catalogsearch-result-index .mst-search_result-tabs>li>a.active{
+	background: white;
+    border-bottom: 1px solid #fff !important;
+    border: 1px solid #ededed;
+    color: #105a99;
+}
+	
+
+.catalogsearch-result-index a.more-details {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background: #105a99;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 0;
+}
+/* .catalogsearch-result-index .product-item-inner,.catalogsearch-result-index .price-box.price-final_price { */
+    /* display: none; */
+/* } */
+@media(max-width:991px){
+	.product-info-main, .catalog-product-view , .catalog-product-view , body.catalog-product-view.page-layout-1column .product.media {
+    max-width: unset !important;
+    width: 100%;
+}
+}
+@media(max-width:480px){
+	.catalog-product-view .swatch-attribute .swatch-option{
+		width:100%!important;
+	}
+}
+.catalog-product-view .swatch-option.image>input[type=checkbox],.catalog-product-view .swatch-option.image>input[type=radio] {
+  
+    line-height: normal;
+    content: '\f00c' ;
+    font-family: fontAwesome;
+    font-weight: 700;
+    color: #fff;
+    left: 10px;
+    top: 0;
+    font-size: 20px;
+    bottom: 0;
+    position: absolute;
+    margin: auto !important;
+    height: 30px;
+    width: 30px;
+    line-height: 1;
+    padding: 5px;
+    border-radius: 50%;
+    background: #00873b;
+}
+.catalog-product-view .page-main{
+	max-width:100%;
+	padding:0px;
+}
+.catalog-product-view .swatch-option .label{
+	padding: 0;
+    display: inline-block;
+    font-size: 15px;
+    color: #333;
+    height: 45px;
+    line-height: 45px;
+    font-family: 'Avenir LT Pro 55 Roman';
+}
+.catalog-product-view .swatch-option.selected .label {
+    font-family: 'Avenir Black';
+}
+ul.header.links{
+display:none;
+}
+.block.block-search {
+   text-align:center;
+}
+.nav-sections-item-content>.navigation, .nav-sections {
+    background: #ebf0f7 !important;
+    display: block;
+}
+@media (min-width: 768px), print{
+.product-add-form .product-options-wrapper .field .control {
+    width: 100%;
+}
+}
+.fieldset > .field > .label, .fieldset > .fields > .field > .label {
+     margin: 0 0 0px !important; 
+    display: inline-block;
+}
+@media (min-width: 768px), print{
+.product-info-main .product-add-form {
+     padding-top: 0px !important; 
+}
+}
+
+/* swatch-option.image:not(.disabled):hover, .swatch-option.color:not(.disabled):hover{ */
+	/* boder:0px solid #f!important; */
+/* } */
+.catalog-product-view div.swatch-option:nth-child(2n+1) {
+    margin-left: 0 !important;
+}
+.catalog-product-view div.swatch-option:nth-child(2n+2){
+	margin-left:0 !important;
+	float:right;
+	
+}
+.catalog-product-view .fotorama__stage__frame .fotorama__img{
+	max-width: 560px !important;
+	max-height: 560px !important;
+}
+.catalog-product-view .gallery-placeholder {
+    max-width: 560px;
+    max-height: 560px;
+}
+.catalog-product-view .swatch-option.selected {
+    border: 2px solid #00873b;
+    outline: 0 !important;
+}
+.catalog-product-view .swatch-option {
+    margin: 0  !important;
+    width: calc(50% - 15px) !important;
+    height: auto !important;
+    background: transparent !important;
+    border-radius: 5px;
+    min-height: 45px;
+    position: relative;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+/* .catalog-product-view .product-info-price{
+	display:none!important;
+} */
+.catalog-product-view button#product-addtocart-button {
+    color: #fff;
+}
+.catalog-product-view .sections.nav-sections{
+	margin-bottom:5px;
+}
+
+.fotorama__stage__frame.fotorama_vertical_ratio.fotorama__loaded.fotorama__loaded--img .fotorama__img{
+	width:100%;
+}
+.catalog-product-view .swatch-option.image.selected:not(.disabled):hover, .catalog-product-view .swatch-option.color.selected:not(.disabled):hover {
+    border: 2px solid #00873b !important;
+}
+.swatch-option.image:not(.disabled):hover, .swatch-option.color:not(.disabled):hover {
+    border: 1px solid #00873b !important;
+    border-radius: 0;
+    outline: 1px solid #00873b !important;
+}
+
+.catalog-product-view .swatch-option.selected:before {
+    content: '\f00c';
+    font-family: fontAwesome;
+    font-weight: 700;
+    color: #fff;
+    left: 10px;
+    top: 0;
+    font-size: 20px;
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+    height: 30px;
+    width: 30px;
+    line-height: 1;
+    padding: 5px;
+    border-radius: 50%;
+    background: #00873b;
+}
+
+.nav-sections {
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    -webkit-flex-basis: auto;
+    flex-basis: auto;
+    margin-bottom: 25px;
+}
+.navigation {
+    max-width: 1170px ;
+    
+}
+.help-block .text-larege {
+    font-size: 58px;
+    font-family: "Avenir Black";
+    line-height: 1;
+}
+.navigation .level0 > .level-top {
+    
+    height: 50px;
+    line-height: 50px;
+    font-weight: 400;
+   
+}
+.fieldset .field.required .label:after{
+	display:none;
+}
+.catalog-product-view .field.required .label {
+    
+    padding: 0;
+    display: inline-block;
+    font-size: 15px;
+    color: #333;
+    height: 45px;
+    line-height: 45px;
+    font-family: 'Avenir LT Pro 55 Roman';
+}
+
+/* .minicart-items .product-item-details .details-qty.qty { */
+    /* display: none; */
+/* } */
+
+.navigation li.level0 {
+    position: unset !important;
+    
+}
+
+
+li.level0>a.level-top {
+    font-size: 18px;
+    font-family: "Avenir LT Pro 55 Roman";
+}
+span.ui-menu-icon.ui-icon.ui-icon-caret-1-e {
+    display: none;
+}
+span.ui-menu-icon.ui-icon.ui-icon-caret-1-e {
+    color: #105a99;
+}
+.navigation li.level0.first>a {
+    padding-left: 15px;
+}
+ .call-us{
+    float: right;
+    margin-top: 15px;
+    height: auto;
+    width: auto;
+}
+/* .call-us .phone-link {
+    text-align: right;
+  } */
+  .call-us .phone-link {
+    font-family: "Avenir LT Pro 55 Roman";
+}
+.block-search {
+    margin-top: 15px;
+    width: 280px;
+    float: none;
+    display: inline-block;
+    position: relative;
+    margin-left: 24.5%;
+    padding-left: 0;
+}
+.block-search .block-content {
+    margin-bottom: 0;
+}
+.block-search .control {
+    overflow: hidden;
+    border-top: 0;
+    margin: 0;
+    clear: both;
+    padding: 0;
+}
+
+@media (min-width: 769px), print{
+.panel.header .links, .panel.header .switcher {
+    display: inline-block;
+    float: right;
+}
+}
+ul.header-currency-list li {
+    margin-right: 5px;
+  
+}
+ul.header-currency-list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-right: 30px;
+    
+    margin-top: 0;
+    float: left;
+}
+.block-search input {
+    margin-bottom: 5px;  
+    text-align: right;
+    height: 40px;
+    line-height: 1;
+    border-radius: 5px;
+    font-size: 13px;
+    border: 1px solid #105a99;
+    margin: 0;
+    display: inline-block;
+    padding: 0 15px;
+    
+}
+li.level0 a.level-top {
+    font-size: 16px;
+    font-family: "Avenir LT Pro 55 Roman";
+}
+.breadcrumbs {
+    display: none;
+}
+strong.subtitle.empty {
+    color: #333;
+}
+.navigation li.level0 .submenu.level1 .submenu {
+    position: unset !important;
+    clear: both;
+    display: block !important;
+    border: 0;
+    box-shadow: none;
+}
+.catalog-category-view .category-view{
+margin-left:calc(-100vw / 2 + 100% / 2) !important;
+margin-right:calc(-100vw / 2 + 100% / 2) !important;
+padding:0 30px;
+margin-bottom:30px;
+}
+.catalog-category-view .first-wrap-category{
+background:#4b7389;
+border-radius:5px;
+}
+.catalog-category-view .category-view .category-name
+{
+font-size:36px;
+color:#fff;
+font-weight:600;
+text-transform:uppercase;
+margin-bottom:10px;
+/* display: inline-flex; */
+position:relative;
+}
+/* .catalog-category-view h1#page-title-heading{
+	margin-left:30px;
+} */
+.second-wrap-category 
+{
+    max-width: 1170px;
+    margin: auto;
+    padding: 65px 15px;
+}
+.page-main .columns{
+margin-left:0 !important;
+margin-right:0 !important;
+}
+.panel.header {
+    background-color: #105a99;
+    
+}
+
+.page-header .header.panel {
+    display: block;
+    background: #105a99;
+    max-width: 1170px !important;
+    margin: 0 auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+.catalog-category-view .page-header .header.panel {
+    display: block;
+    background: #105a99;
+    max-width: 1170px;
+    height: 55px;
+    margin: 0 auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+ .nav-open .page-wrapper {
+    left: calc(0% - 0px);
+  }
+/*.page-header .header.panel > *:not(.minicart-wrapper) {
+    float: left;
+}*/
+.minicart-wrapper .action.showcart, .minicart-wrapper .action.showcart.active {
+    display: flex !important;
+    margin-top: -20px;
+    align-items: center;
+}
+.minicart-wrapper .action.showcart:before{
+content: '';}
+
+button.action.search {
+    height: 40px;
+    width: 45px;
+}
+
+.navigation li.level0 .submenu.level0{
+width:100%;
+left:0 ;
+right:0;
+padding-top:20px;
+
+padding-bottom:30px;
+border:0;
+box-shadow:none;
+}
+@media(min-width:768px){
+	li.contact-us.item.level0.level-top.mobile.ui-menu-item.ui-menu-item-wrapper {
+     display: none; 
+}
+}
+.naviation li.level0 .submenu.level0, .navigation li.level0.submenu.level0 *{
+background:#e7eef5 !important;
+}
+
+
+
+.navigation li.level0.ui-menu-item .submenu.level0 a {
+	   border-bottom: 1px solid #fff;
+    font-family: "Avenir Medium";
+	 /* min-height: 45px !important; */
+	     height: 40px;
+	   align-items: center;
+    padding-top: 0;
+	width: auto;
+    padding-bottom: 0;
+      line-height: 1 !important;
+    display: flex;
+    font-size: 13px;
+     color: #3a3a3a;
+}
+
+li.level1.nav-1-5.category-item.ui-menu-item{
+    float: right;
+	
+}
+li.level1.nav-1-6.category-item.ui-menu-item{
+    float: right;
+}
+li.level1.nav-1-4.category-item.ui-menu-item a,li.level1.nav-1-5.category-item.ui-menu-item a,li.level1.nav-1-6.category-item.ui-menu-item a{
+	border-bottom: 0 !important;
+	  min-height:15px !important;
+}
+li.level1.nav-1-4.category-item.ui-menu-item>a.ui-menu-item-wrapper,li.level1.nav-1-5.category-item.ui-menu-item>a.ui-menu-item-wrapper,li.level1.nav-1-6.category-item.ui-menu-item>a.ui-menu-item-wrapper{
+	    max-height: 18px;
+		align-items:center;
+		margin: 10px 0px 20px 10px;
+		
+}
+
+li.level1.nav-1-4.category-item.ui-menu-item>a.ui-menu-item-wrapper span,li.level1.nav-1-5.category-item.ui-menu-item>a.ui-menu-item-wrapper span,li.level1.nav-1-6.category-item.ui-menu-item>a.ui-menu-item-wrapper span{
+	margin-left:30px;
+}
+ul.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-front {
+    min-width: 210px;
+    padding-left: 15px !important;
+    padding-top: 10px !important;
+    padding-bottom: 30px !important;
+    padding-right: 15px !important;
+}
+
+span.dot3 {
+    color: #fff;
+    font-family: 'Avenir LT Pro 55 Roman';
+    text-shadow: 0 0 7px #000000;
+}
+.block-content .items-total {
+    display: none;
+}
+.cart.table-wrapper .increaseQty,.cart.table-wrapper .decreaseQty {
+    width: 30px;
+    height: 36px;
+    border: 0px;
+	font-size: 17px;
+    background: #fff;
+}
+.minicart-items-wrapper{
+	border:1px solid #fff;
+	padding: 5px;
+}
+.minicart-wrapper .product .actions > .primary:not(:last-child){
+	display:none;
+}
+.minicart-items .action.delete:before {
+    content: '\e616';
+    /* margin-top: -70px; */
+    /* padding-left: 240px; */
+}
+.block-minicart .block-content > .actions{
+	display:none;
+}
+.page-header{
+	margin:0 !important;
+}
+.navigation li.level0 .submenu.level0, .navigation li.level0 .submenu.level0 * {
+    background: #e7eef5 !important;
+	
+}
+.footer-ul>li>a>i{
+     font-size: 26px;
+    color: #105a99;
+    padding: 0 0px 0px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+    margin-right: 10px;
+    
+}
+ 
+.page-wrapper>.page-bottom{
+	 box-sizing: border-box;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        max-width: 9999px ;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+		margin-top:-50px;
+        width: 100%;
+}
+	@media (max-width: 480px){
+.baolamroi .col1 {
+    float: none !important;
+    display: block !important;
+    text-align: center;
+}
+}
+@media (max-width: 480px){
+.owl-carousel.owl-drag .owl-item{
+	margin-right:5px ;
+}
+}
+	  .modal-popup.modal-slide .modal-footer {
+        border-top: 1px solid #c1c1c1;
+        text-align: right
+    }
+	.checkout-index-index .modal-popup .modal-footer .action-save-address {
+        float: right;
+        margin: 0 0 0 20px
+    }
+	 .page-footer {
+        background: #f4f4f4;
+        margin-top: auto;
+        padding-bottom: 25px
+    }
+
+    .page-footer .switcher .options ul.dropdown {
+        bottom: -10px;
+        left: 100%;
+        margin: 0 0 0 20px;
+        top: auto
+    }
+
+    .page-footer .switcher .options ul.dropdown:before,.page-footer .switcher .options ul.dropdown:after {
+        bottom: 13px;
+        left: auto;
+        right: 100%;
+        top: auto
+    }
+
+    .page-footer .switcher .options ul.dropdown:before {
+        border-color: transparent #fff transparent transparent
+    }
+
+    .page-footer .switcher .options ul.dropdown:after {
+        border-color: transparent #bbb transparent transparent;
+        margin: 0 0 -1px -1px
+    }
+
+    .footer.content {
+        border-top: none
+    }
+
+    .footer.content .block {
+        float: right
+    }
+
+    
+
+    .footer.content .switcher.store {
+        display: block;
+        margin: 0
+    }
+
+    .footer.content .links {
+        display: inline-block;
+        padding-right: 50px;
+        vertical-align: top
+    }
+
+    .footer.content .links li {
+        background: 0 0;
+        border: none;
+        font-size: 14px;
+        margin: 0 0 8px;
+        padding: 0
+    }
+
+    .footer.content .links a,.footer.content .links strong {
+        display: inline
+    }
+.footer-bot{
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-col .col-title {
+position: relative;
+border-bottom: 1px solid #25476c;
+list-style: none;
+height: 42px;
+line-height: 48px;
+font-family: "Avenir Black";
+
+margin-bottom: 0;
+}
+ li.level1.category-item.ui-menu-item span.ui-menu-icon.ui-icon.ui-icon-carat-1-e  {
+    /* color: #105a99; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 19px !important;
+    margin-right: 10px;
+    height: 17px;
+    display: inline-block;
+    background: url(../img/vector-down.png) !important;
+}
+.block-minicart.block #minicart-content-wrapper > .action {
+    clear: both;
+    text-align: center;
+    background: #00873b;
+    color: #fff;
+    margin-top: 5px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+.block-minicart.block #minicart-content-wrapper .action.submit-enquiry span {
+    color: #fff;
+    line-height: 40px;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+.block-minicart.block #minicart-content-wrapper .action.submit-enquiry img {
+    float: right;
+    margin-top: 11px;
+}
+@media(min-width:768px){
+.navigation .level0.parent > .level-top:after {
+		font-family: 'luma-icons';
+		font-size: 15px;
+		color: #105a99;
+		content: '\e622';
+		margin-right: 20px;
+		margin-left: 15px;
+		line-height: 1;
+		display: inline-block;
+	}
+}
+button#top-cart-btn-checkout:after{
+	background: url(../img/vector-right-white.png);
+    content: '';
+    width: 17px;
+    height: 20px;
+    float: right;
+    background-repeat: no-repeat !important;
+}
+.minicart-wrapper .minicart-widgets {
+    margin-top: 2px;
+}
+/* button#btn-minicart-close { */
+    /* display: none; */
+/* } */
+    li.level0>a.ui-state-active:after {
+        opacity: 0.3;
+    }
+
+.page-main .page-bottom{
+margin-left: 0px !important;
+    margin-right: 0 !important;
+}
+.navigation .level0>.level-top{
+font-weight:400;}
+.panel.header ul li {
+    margin-bottom: 0;
+    border: 1px solid #fff;
+}
+.dropbtn a.dropbtn-trans {
+   
+    text-decoration: none;
+    color:#333;
+    white-space: nowrap;
+    margin-left: 4px;
+    margin-right: 4px;
+    
+
+}
+.block-search .form.minisearch .action.search span{
+display:none;
+}
+.section-item-title.nav-sections-item-title.active {
+    display: none;
+}
+.block-search .form.minisearch .action.search {
+    right: 0px;
+    background: #105a99;
+    opacity: 1;
+}
+.block-search .action.search:before{
+line-height:40px;
+
+color:#fff !important;
+font-size:15px
+}
+
+.footer-col .col-title:before {
+    content: '';
+    background: url(../img/vector-down.png);
+    display: inline-block;
+    width: 19px;
+    height: 17px;
+    background-repeat: no-repeat;
+    background-size: inherit;
+    position: absolute;
+    left: 0px;
+    line-height: 50px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.panel.wrapper {
+    background-color: #105a99;
+}
+strong.view-gre,ul li a.header.links {
+    color: white;
+}
+
+
+
+
+ul.header-currency-list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-right: 30px;
+    
+    margin-top: 0;
+    float: left;
+}
+
+
+
+.header.panel > .header.links {
+    /* display: none; */
+    margin-top: -20px;
+}
+.header.content {
+    padding: 30px 20px 0;
+    padding-top: 15px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    
+    width: auto;
+}
+.contact-us.item.level0.level-top.desktop.ui-menu-item{
+    margin-right: 15px;font-size: 15px;position: absolute !important;border-radius: 5px;
+                        ;text-align:center;right:0;width: 180px; color: #fff !important;background:#cd2027;}
+
+.contact-us.item.level0.level-top.desktop.ui-menu-item a{
+    color: #fff !important; padding-right: 15px; position: relative; background: #cd2027 !important; width: 100%; padding-left: 15px !important; font-size: 15px !important; 
+}
+.page-header {
+    padding: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    -webkit-box-shadown: none !important;
+	
+    margin: 0px !important;
+    border: 0 !important;
+}
+header.page-header {
+    margin: 0px !important;
+}
+@media (min-width: 769px),print{
+.page-header .header.content {
+    max-width: 1170px !important;
+    padding-left: 15px!important;
+    padding-right: 15px !important;
+    
+}
+}
+.logo {
+    margin: -8px auto 25px 0;
+    max-width: 150px;
+    float: left;
+    
+    position: relative;
+    z-index: 5;
+}
+
+
+.header-bot .form-control{
+    text-align: center;
+}
+
+
+#container {
+	width: 1000px;
+	overflow: hidden;
+	margin: 50px auto;
+	background: white;
+}
+
+button.dropbtn {
+    color: #000;
+}
+.dropbtn{
+     border-radius: 4px;
+   white-space: nowrap;
+    color: #000;
+   font-size: 12px;
+   line-height: 26px;
+   height: 30px;
+    font-size: larger;
+    margin-top:10px;
+    width: 150px;
+    border: 1px solid #000;
+    height: 30px;
+    background-color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    border-radius: 5px;
+   
+
+}
+.dropbtn ul{
+    margin-top: 10px;
+}
+.dropbtn ul li{
+    list-style-type: none;
+  display: inline;
+  margin-left: 40px;
+  
+}
+/* .fa.fa-search{
+    float: left;
+} */
+.logo{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.logo img{
+    display: block;
+    height: auto;
+   
+}
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    overflow-clip-margin: content-box;
+    border: 0;
+    overflow: clip;
+}
+.dropbtn ul li a:link{
+    color: #a71515;
+   text-decoration: none;
+   text-transform: uppercase;
+   padding-top: 40px;
+   padding-bottom: 40px;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+.dropbtn ul li a:visited{
+    color: #b32929;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+.dropbtn ul li a:hover{
+    color: #FFF;
+    background-color: white;
+    -webkit-box-shadow: 0px 4px 5px rgba(50, 50, 50, 0.93);
+    -moz-box-shadow:    0px 4px 5px rgba(50, 50, 50, 0.93);
+    box-shadow:         0px 4px 5px rgba(50, 50, 50, 0.93);
+}
+.photobanner {
+	height: 233px;
+	width: 3550px;
+	margin-bottom: 80px;
+}
+
+.collapse .navbar-collapse{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.nav-item1{
+    
+    
+    float: right;
+    padding-right: 100px;
+    color: #000;
+}
+.navbar{
+    max-width: 1500px;
+     background-color: #f6f6f8;
+   
+
+    
+    
+     height: 60px;
+    
+     
+    
+     font-family: Helvetica, sans-serif;
+    
+     font-size: 13px;
+    
+}
+.navbar ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    position: relative;
+    
+}
+
+.navbar ul li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 50px;
+}
+.columns.main {
+    width: 100%;
+}
+.columns {
+    display: block;
+}
+.columns .columns.main{
+    padding-bottom: 40px;
+}
+.navbar ul li:link{
+    color:#FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+}
+.block-searchh button{
+    height: 40px;
+    line-height: 1;
+    border-radius: 5px;
+    font-size: 13px;
+    border: 1px solid #105a99;
+    margin: 0;
+    width: 30px;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.navbar.dropdown .show{
+    background-color: white;
+}
+.navbar ul li:visited{
+    color: #FFF;
+
+    text-decoration: none;
+ 
+    text-transform: uppercase;
+}
+.navbar ul li:hover{
+    color: #FFF;
+
+   background-color: #dbdb5f;
+
+   -webkit-box-shadow: 0px 4px 5px rgba(240, 240, 240, 0.93);
+
+   -moz-box-shadow:    0px 4px 5px rgba(240, 240, 240, 0.93);
+
+   box-shadow:         0px 4px 5px rgba(240, 240, 240, 0.93);
+}
+.collapse{
+    list-style: none none;
+}
+.collapse li.nav-item{
+    position: unset !important;
+}
+
+.footer-bot{
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-top{
+    background-color: #5452df;
+    height: 300px;
+    
+    
+   
+}
+ .call-us{
+    float: right;
+    margin-top: 15px;
+    height: auto;
+    width: auto;
+}
+/* .call-us .phone-link {
+    text-align: right;
+  } */
+  .call-us .phone-link {
+    font-family: "Avenir LT Pro 55 Roman";
+}
+.block-searchh {
+    margin-top: 15px;
+    width: 280px;
+    float: none;
+    display: inline-block;
+    position: relative;
+    margin-left: 24.5%;
+    padding-left: 0;
+}
+.block-searchh .block-content {
+    margin-bottom: 0;
+}
+.block-searchh .control {
+    overflow: hidden;
+    border-top: 0;
+    margin: 0;
+    clear: both;
+    padding: 0;
+}
+
+@media (min-width: 769px), print{
+.panel.header .links, .panel.header .switcher {
+    display: inline-block;
+    float: right;
+}
+}
+.block-searchh input {
+    margin-bottom: 5px;  
+    text-align: right;
+    height: 40px;
+    line-height: 1;
+    border-radius: 5px;
+    font-size: 13px;
+    border: 1px solid #105a99;
+    margin: 0;
+    display: inline-block;
+    padding: 0 15px;
+    position: static;
+}
+/* .col-xs-12{
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+} */
+.col1{
+    height: 100% !important;
+}
+.col3{
+    height: 100% !important;
+}
+.col2{
+    height: 100% !important;
+}
+.footer {
+    background: #002954;
+    color: #fff;
+    padding: 0px;
+    font-size: 15px;
+}
+/* .home-content.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+
+.home-content.wrap {
+    padding: 0;
+}
+.footer-top div {
+    float: left;
+    display: block;
+    color: #0c0101;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+.help-block.container {
+        width: 1170px;
+        margin-right: auto;
+        margin-left: auto;
+}
+
+
+/* @media (min-width: 576px){
+.container {
+      max-width: 540px;  
+}
+}  */
+.footer-content{
+    padding-left: 0;
+    padding-right: 0;
+    font-family: "Conv_Avenir_45_Book";
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.footer-content-2{
+    float: right;
+    display: flex;
+}
+.footer-1{
+    display: block;
+}
+.footer-content-2  p{
+    word-wrap: break-word;
+    font-size: 16px;
+    font-family: "Conv_Avenir_45_Book";
+    margin: 0 0 10px;
+    color: white;
+}
+.footer-content-3 p{
+    word-wrap: break-word;
+    font-size: 16px;
+    font-family: "Conv_Avenir_45_Book";
+    margin: 0 0 10px;
+    color: white;
+}
+
+
+
+
+.footer-mid{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #5452df;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-mid.noi-dung{
+    
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+        display: none;
+    
+}
+.page-footer {
+    padding-bottom: 0;
+ 
+}
+
+.page-footer .footer.content {
+   
+        padding-bottom: 0px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        padding-top: 45px;
+        max-width: unset !important;
+    
+}
+.footer.container {
+    padding-left: 0;
+    padding-right: 0;
+    font-family: "Conv_Avenir_45_Book";
+}
+
+
+.footer-ul li {
+    min-height: 30px;
+    line-height: 50px;
+  
+    display:block;
+    
+}
+
+.phone-link{
+    float: right;
+    
+}
+.text{
+    float: right;
+    height: auto;
+    width: auto;
+}
+.mb-3{
+    margin-bottom:1rem!
+}
+
+
+.footer-ul li a {
+    border-bottom: 1px solid #25476c;
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    font-family: "Avenir Black";
+    margin-bottom: 0;
+    
+    /* padding-left: 30px;
+    padding-right: 30px; */
+   
+    display:inline-block;
+    width: 100%;
+    
+}
+.footer-ul li a{
+font-family: "Conv_Avenir_45_Book";
+}
+.page-footer .footer-ul li a i {
+    font-size: 26px;
+    color: #105a99;
+    padding: 0 0px 0px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.footer-ul a {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+.footer-ul li  {
+    min-height: 34px;
+    line-height: 34px;
+    /* width:auto;
+    height: auto; */
+    padding-left: 0px;
+}
+
+
+.col-title {
+    font-size: 25px;
+}
+
+
+.nav-sections-item-content>.navigation, .nav-sections {
+    background: #f2f2f2 !important;
+    display: block;
+}
+.nav-sections {
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    -webkit-flex-basis: auto;
+    flex-basis: auto;
+    margin-bottom: 25px;
+}
+.navigation {
+    max-width: 1170px;
+    
+}
+.modal-header{
+	    padding: 0px !important;
+    border-bottom: 0px solid #e5e5e5 !important;
+}
+
+.modal-content {
+    position: unset !important;
+    background-color: unset !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    border: unset !important;
+    border: unset !improtant;
+    border-radius: unset !important;
+    outline: unset !important;
+    -webkit-box-shadow: unset !important;
+    box-shadow: unset !important;
+}
+.catalog-product-view .fotorama__thumb-border {
+	border:none !important;
+}
+.fotorama__nav__frame.fotorama__nav__frame--dot {
+    display: none;
+}
+@media(max-width:480px){
+.fotorama__nav__shaft {
+	max-height:140px !important;
+}
+}
+@media(max-width:480px){
+.fotorama__nav--dots .fotorama__nav__frame {
+    margin-top: 10px;
+    height: 90px !important;
+    width: 18px;
+	margin-right: 10px;
+}
+}
+/* .fotorama__stage__shaft.fotorama__grab{ */
+	/* max-width:560px !important; */
+	/* margin-left:60px !important; */
+/* } */
+.catalog-category-view .browse-by-category a.child-cat:hover {
+    border: solid 1px #4b7389;
+    background: #fff;
+    color: #4b7389;
+    padding: 14px 14px;
+}
+.catalog-category-view .browse-by-category a.child-cat:after:hover{
+	background:url(../img/vector-right-cat.png);
+}
+.catalog-product-view .stock.unavailable{
+	display:none !important;
+}
+
+
+.navigation li.level0 {
+    position: unset !important;
+    
+    /* margin-left: 10px; */
+
+}
+
+.navigation .level0 > .level-top {
+    
+    height: 50px;
+    line-height: 50px;
+	text-transform: none !important;
+    font-weight: 400;
+   
+}
+li.level0>a.level-top {
+    font-size: 18px;
+    font-family: "Avenir LT Pro 55 Roman";
+}
+span.ui-menu-icon.ui-icon.ui-icon-caret-1-e {
+    display: none;
+    color: #105a99;
+}
+ul.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-front {
+    top: 50px;
+}
+.navigation li.level0.first>a {
+    padding-left: 15px;
+}
+
+.nav.navbar-expand-lg{
+    background-color: #bab9eb;
+}
+li .dropbtn{
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f6f6f8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(243, 240, 240, 0.93);
+   
+
+}
+.dropdown-content a{
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+}
+.dropdown-content a:hover{
+    background-color: #f6f6f8;
+}
+.dropbtn:hover .dropdown-content{
+    display: block;
+}
+
+.btn-primary{
+    float:right;
+    background-color: #f6f6f8;
+    border-color: #f6f8f7;
+    color: #000;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+.dropdown-toggett {
+    color: #fff !important;
+    padding-right: 15px;
+    margin-right: 1px;
+    position: relative;
+    background: #cd2027 !important;
+    width: 100%;
+    font-size: 18px;
+    height: 60px;
+    width: 150px;
+    padding-left: 15px !important;
+    
+}
+.dropdown-toggett .fa-angle-double-right{
+    
+    padding-right:40px ;
+}
+
+.catalog-product-view .product.attribute.description .value ul{
+	margin-left:10px ;
+	padding-left:0px !important;
+}
+.catalog-product-view .product.attribute.description .value ul li{
+	padding-left:20px!important;
+}
+.catalog-product-view .col-right .product-info-main{
+	
+	
+	background:#f8f8f8;
+	    max-width: 490px;
+    width: 100% !important;
+    float: left;
+}
+
+.catalog-product-view .suitability-wrap .label {
+    font-size: 18px;
+    color: #333333;
+    padding-left: 0;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 0;
+}
+.catalog-product-view .suitability-wrap{
+	margin-top:60px;
+	/* min-width:460px; */
+}
+
+.catalog-product-view .page-title{
+	display:inline-block;
+	line-height:1;
+	margin-top:40px;
+	margin-right:20px
+}
+.product-info-main .product-attachment-container .section-title.up{
+	    content: '\e621' !important;
+    color: #333 !important;
+}
+/* .catalog-product-view .product-info-main .product-info-stock-sku */
+.catalog-product-view .fotorama__arr.fotorama__arr--next,.catalog-product-view .fotorama__arr.fotorama__arr--prev{
+    display: none !important;
+}
+.catalog-product-view .suitabilities,.catalog-product-view .suitabilitiess{
+	display:flex;
+	flex-flow:row wrap;
+	align-items:center;
+}
+.minicart-items .product > .product-item-photo, .minicart-items .product > .product-image-container {
+    height: 45px;
+    width: 45px;
+    max-height: 45px;
+    max-width: 45px;
+}
+.catalog-product-view .suitability-item {
+    border: 1px solid gainsboro;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 25px;
+    align-self: center;
+    flex: 0 1 calc(50% - 10px);
+    margin-bottom: 15px;
+}
+.catalog-product-view .product.direction .content{
+	font-size:14px;
+	line-height:25px;
+	color:#f7f7f7;
+}
+.catalog-product-view .product-description {
+    margin-top: 45px;
+    font-family: 'Avenir Light';
+}
+.catalog-product-view .suitability-item img {
+    display: inline-block;
+    margin-right: 8px;
+} 
+.catalog-product-view .suitability-item span{
+	font-size:11px;
+	font-family:"Avenir LT Pro 55 Roman";
+}
+li.top-menu-title-wrapper.category-item.ui-menu-item {
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+    text-align: center;
+}
+.catalog-product-view .col-right{
+	width: 43.7%;
+	background: #f8f8f8;
+	padding-bottom: 50px;
+}
+.navigation .level0 .submenu li {
+    margin: 0;
+    position: relative;
+}
+.call-us .phone-link>span {
+    font-family: "Avenir Black";
+    color: #333 !important;
+}
+.container-fluid {
+    width: 90%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.page-main{
+   
+    max-width: 1170px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main{
+    display: block;
+}
+.banner-slider-wrap ul {
+    list-style: none;
+   
+   
+}
+
+.columns.main .item{
+    height: 460px;
+    max-width: 1205px;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    
+    display: block;
+    overflow: hidden;
+}
+.text-slider-wrap{
+     
+        position: absolute;
+        font-family: 'Avenir Black';
+        text-align: left;
+        top: 0;
+        /* line-height: 20%; */
+        float: left;
+        height: 60%;
+        max-width: min-content;
+        left: 120px;
+        bottom: 0;
+        margin: auto;
+    
+
+}
+.slider-content{
+    clear: both;
+    display: inline-flex;;
+}
+p.title-slider{
+    display: inline-block;
+    color: #fff;
+    text-align: left;
+    clear: both;
+    font-size: 42px;
+}
+a.btn-slider.btn-green{
+    background-color: #4bb9bb;
+    color:#fff;
+    margin-right: 30px;
+}
+a.btn-slider{
+    text-decoration: none;
+    font-size: 16px;
+    vertical-align: middle;
+    min-width: 265px;
+    display: inline-block;
+    height: 45px;
+    border-radius: 4px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+a.btn-slider.btn-white {
+    background: #fff;
+    color: #4bb9bb;
+}
+.page-bottom{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    width: auto;
+    box-sizing: border-box;
+}
+
+.help-block .content-wrap {
+    max-width: 250px;
+    height: 226px;
+    margin: auto;
+    text-align: center;
+}
+/* .help-block .text-larege { */
+    /* font-size: 58px; */
+    /* font-family: "Avenir Black"; */
+    /* line-height: 1; */
+/* } */
+
+.help-block p {
+    color: #fff !important;
+}
+.help-block .container {
+    padding: 0;
+}
+.help-block .text-large {
+    font-size: 58px;
+    font-family: "Avenir Black";
+    line-height: 1;
+}
+
+.help-block .row div:first-child.content-wrap .vector-down-largest{
+    margin-top: 30px;
+}
+.help-block .text-nor {
+    font-family: "Avenir Black";
+    font-size: 32px;
+}
+.help-block .text-small>p{
+	 font-size: 16px;
+    font-family: "Conv_Avenir_45_Book";
+	margin: 0 !important;
+	
+}
+.help-block .text-small {
+   
+	margin:  10px 0 !important;
+}
+.footer-col .col-title {
+position: relative;
+border-bottom: 1px solid #25476c;
+list-style: none;
+height: 50px;
+line-height: 50px;
+font-family: "Avenir Black";
+
+margin-bottom: 0;
+}
+
+.home-content.wrap .row.row1 .bao3 .baovua{
+    margin-bottom: 15px;
+}
+.navigation .level0 .submenu a {
+    min-height: 40px;
+    display: flex;
+    line-height: 1;
+    text-align: left;
+    align-items: center;
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+   
+    <head>
+	<css src="css/demo.css" />
+	<css src="css/index.css" />
+	<css src="css/responsive.css" />
+	<css src="css/bootstrap.min.css" />
+
+	<css src="css/styles-l.css" />
+<css src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" src_type="url" />
+
+        <css src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" src_type="url"/>
+ <css src="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" src_type="url"/>
+
+     
+	<script src="js/toggleClass.js" />
+
+
+
+
+    </head>
+</page>

@@ -1,0 +1,15 @@
+<button class="quick_view" type="button" id="quick_view_button<?php echo $block->getProduct()->getId() ?>"
+        data-mage-init='{ "David_QuickView/js/product/productlist/item/quickview": { } }'
+        data-id="<?php echo $block->getProduct()->getId() ?>"
+        data-url="<?php  echo $block->getProductUrl($block->getProduct()) ?>">
+    <?php echo __('Quick View') ?>
+</button>
+<div class="row">
+    <div id="quick_view_container<?php echo $block->getProduct()->getId() ?>"></div>
+</div>
+<style>
+    #quick_view_container<?php echo $block->getProduct()->getId() ?> > #frame_product<?php echo $block->getProduct()->getId() ?>
+    {
+        width: 100%;
+    }
+</style>

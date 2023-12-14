@@ -1,0 +1,19 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/**
+ * Currency switcher
+ *
+ * @var \Magento\Directory\Block\Currency $block
+ */
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$stores = $objectManager->create('Magento\Store\Api\StoreRepositoryInterface')->getList();
+$conf = $objectManager->get('Magento\Framework\App\Config\ScopeConfigInterface')->getValue("web/unsecure/base_url");
+
+?>
+
+
+
