@@ -1,0 +1,140 @@
+<?php 
+ $helper 		  = $this->helper('David\Callforprice\Helper\Data');
+ $submiturl 	  = $helper->submitformurl();
+ $objectManager	  = \Magento\Framework\App\ObjectManager::getInstance();
+ $customerSession = $objectManager->get('Magento\Customer\Model\Session');
+ $image	  = $block->getLayout()->createBlock('Magento\Catalog\Block\Product\ListProduct');
+?>
+<div class="callprice_request_form">
+    <form name="callforprice_form" id="callforprice_form" method="post">
+		<div class ="callforprice_name">
+			<h3>Request Call For Price from Email</h3>
+			</div>
+		<div class="fieldset">
+			<ul class="form-list products-list">
+				<li class="fields">
+					<div class="field" style="float: left;">
+						<a href="<?php echo $product->getProductUrl(); ?>" style="width: 15%;margin: 0 10px 10px 0" title="<?php echo $product->getName() ?>" class="product-image">
+							<?php echo $image->getImage($product, 'category_page_list')->toHtml() ?>
+						</a>
+						<div class="product-shop" style="">
+							<div class="product-name">
+								<span class="h1" style="border-bottom: none;"><?php echo $product->getName() ?></span>
+							</div>
+							
+						</div>
+					</div>
+				</li>
+				<li class="fields">
+					<div class="field" style="clear: both;">
+						<label class="required" for="name"><?php echo __('Name') ?></label>
+						<div class="input-box">
+							<input id="name" placeholder="Enter Name" name="name" type="text" class="input-text" value="<?= $customerSession->isLoggedIn() ? $customerSession->getCustomer()->getName():''?>" data-validate="{required:true}"/>
+						</div>
+					</div>
+				</li>
+				<li class="fields">
+					<div class="field">              
+						<label class="required" for="email"><?php echo __('Email') ?></label>
+						<div class="input-box">
+							<input id="email"placeholder="Enter email" name="email" type="text" class="input-text" value="<?php echo $customerSession->getCustomer()->getEmail() ?>" data-validate="{required:true, 'validate-email':true}"/>
+						</div>
+					</div>
+				</li>
+				<li class="fields">
+					<div class="field">
+						<label class="required" for="telephone"><?php echo __('Telephone') ?></label>
+						<div class="input-box">
+							<input id="telephone" name="telephone"placeholder="Phone Number EX : +19999999999" type="text" class="input-text required-entry " value="<?php echo $customerSession->getCustomer()->getTelephone() ?>" data-validate="{required:true}"/>
+						</div>
+					</div>
+				</li>
+						<li class="fields">
+					<div class="field">
+						<label class="required" for="comment"><?php echo __('Comment') ?></label>
+						<div class="input-box">
+							<textarea rows="3" cols="5" class="input-text required-entry"placeholder="Enter your Comment" title="comment" id="comment" name="comment"></textarea>
+						</div>
+					</div>
+				</li>
+				<?php if($helper->getCapchaStatus()): ?>
+				<li class="fields">
+					<div class="field">
+						<div class="g-recaptcha" data-sitekey="<?php echo $helper->getCapchaSiteId() ?>"></div>
+						<script type="text/javascript"
+								src="https://www.google.com/recaptcha/api.js?hl=en">
+						</script>
+					</div>
+				</li>
+				<?php endif; ?>
+				<li class="fields actions">
+					<div>
+						<button type="submit" style="float: left" class="button"><span><span><?php echo __('Submit Quote Request') ?></span></span></button>
+						<img class="img_loader_callforprice" id="img_loader_callforprice" src="<?php echo $block->getViewFileUrl('David_Callforprice::images/animated-transparent-backgroun-unscreen.gif'); ?>" alt="" style="position: relative;z-index: 100;display:none;margin-top: -500px;left: 15%;">
+					</div>
+				</li>
+			</ul>
+		</div>
+        <input type="hidden" name="product_id" value="<?php echo $product->getId(); ?>"/>
+    </form>
+    <b style="color: #2C26EC" id="messageresponse" style="display: none;" class="messageresponse"></b>
+</div>
+<script type="text/javascript">
+    //<![CDATA[
+	require([
+        "jquery",
+        "mage/mage",
+		"jquery/validate",
+		'mage/translate'
+    ], function($){
+		/* $.mage.__(''); */
+        var dataForm = $('#callforprice_form');
+        dataForm.mage('validation', {
+			submitHandler: function (form) {
+				$('#img_loader_callforprice').show();
+				<?php if($helper->getCapchaStatus()): ?>
+				if (grecaptcha.getResponse() == ""){
+					alert($.mage.__('You must be verify capcha before submit request !'));
+					$('#img_loader_callforprice').hide();
+					return false;
+				}
+				<?php endif; ?>
+				$.ajax({
+					url: "<?php echo $submiturl; ?>",
+					type: 'POST',
+					dataType: 'json',
+					data: $(this.currentForm).serialize(),
+					success: function(result){
+						var displayString = result.message;
+						if(result.success) {
+							$('#callforprice_form').hide();
+							$('#img_loader_callforprice').show();
+							// $('#messageresponse').show();
+							// $('#messageresponse').html('<ul class="messages"><li class="success-msg"><ul><li><span><i class="fa fa-check" aria-hidden="true"></i>'+displayString+'</span></li></ul></li></ul>');
+							setTimeout(function(){ $.fancybox.close(); });
+						}
+						else
+						{
+							$('#callforprice_form').hide();
+							$('#img_loader_callforprice').hide();
+							$('#messageresponse').show();
+							$('#messageresponse').html('<ul class="messages"><li class="error-msg"><ul><li><span>'+displayString+'</span></li></ul></li></ul>');
+						}
+					}
+					// success: function() {
+					//   location.reload();
+					// }
+           
+				});
+				return false;
+			}
+		});
+    });
+	
+    //]]>
+</script>
+<!-- .callforprice_name {
+    solid-bottom: 1px solid;
+    border-bottom: 1px solid;
+    width: 100%;
+} -->

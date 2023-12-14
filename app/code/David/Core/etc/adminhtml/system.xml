@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2019 V2Agency. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/system_file.xsd">
+    <system>
+		<!-- add new tab in system configuration section -->
+        <tab id="david" translate="label" sortOrder="500" class="v2agency-tab">
+            <label>Agency Extensions</label>
+        </tab>
+    </system>
+</config>

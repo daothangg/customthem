@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * David
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the mageqh.com license that is
+ * available through the world-wide-web at this URL:
+ * https://David.com/license.html
+ * 
+ * DISCLAIMER
+ * 
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ * 
+ * @category   David
+ * @package    David_CustomOrderNumber
+ * @copyright  Copyright (c) 2022 David (https://David.com/)
+ * @license    https://David.com/license.html
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu> 
+        <add id="David_CustomOrderNumber::customordernumber" title="Custom Order Number" module="David_CustomOrderNumber" sortOrder="10" parent="David_Core::core" resource="David_CustomOrderNumber::customordernumber"/>
+        <add id="David_CustomOrderNumber::settings" title="Settings" module="David_CustomOrderNumber" sortOrder="9" parent="David_CustomOrderNumber::customordernumber" action="adminhtml/system_config/edit/section/customordernumber" resource="David_CustomOrderNumber::settings"/> 
+	</menu>
+</config>	

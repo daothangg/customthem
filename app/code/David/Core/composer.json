@@ -1,0 +1,14 @@
+{
+    "name": "david/core",
+    "description": "V2Agency Core",
+    "type": "magento2-module",
+    "license": [
+        "Commercial"
+    ],
+    "version": "1.0.1",
+    "authors": [{
+        "name": "V2Agency",
+        "email": "start@weareyourdevs.com",
+        "homepage": "https://weareyourdevs.com/"
+    }]
+}

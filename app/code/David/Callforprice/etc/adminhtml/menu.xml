@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="David_Callforprice::callforprice_settings" title="Callforprice" module="David_Callforprice" sortOrder="25" parent="David_Core::core" resource="David_Callforprice::callforprice_settings"/>
+		<add id="David_Callforprice::request" title="Manage Request" resource="David_Callforprice::request" parent="David_Callforprice::callforprice_settings" action="david_callforprice/request" module="David_Callforprice" sortOrder="30"/>
+		<add id="David_Callforprice::settings" title="Settings" resource="David_Callforprice::callforprice" parent="David_Callforprice::callforprice_settings" action="adminhtml/system_config/edit/section/callforprice_settings" module="David_Callforprice" sortOrder="35"/>
+	</menu>
+</config>

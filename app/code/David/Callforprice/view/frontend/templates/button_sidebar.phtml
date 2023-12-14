@@ -1,0 +1,32 @@
+<?php
+$objectManager=\Magento\Framework\App\ObjectManager::getInstance();
+$helper = $this->helper('David\Callforprice\Helper\Data');
+// $_prd=$product;
+$itemSelector='.product-item';
+$priceElementSelector='.price-box';
+$cartButtonElementSelector='.tocart';
+$classActionButton='.product-item-actions .action-primary';
+$loadformUrl = $helper->loadformurl();
+$canshow=$helper->showCallForPriceButton($product);
+$enableModule=$helper->enableModule();
+$buttonTitle=$helper->getButtonTitle();
+$productType=$product->getTypeID();
+if($canshow == 1 && $enableModule): ?>
+    <div class="callforprice-product" id="productId_<?echo $product->getId() ?>"></div>
+    <script type="text/javascript">
+        require(['jquery','mage/translate','callforprice'],function($,mage,callforpriceConfig){
+            var callforpriceConfig={
+                "productId":<?php echo $product->getId() ?>,
+                "buttonTitle":'<?php echo $buttonTitle ?>',
+                "loadformUrl":'<?php echo $loadformUrl ?>',
+                "itemSelector":'<?php echo $itemSelector ?>',
+                "priceElementSelector":'<?php echo $priceElementSelector ?>',
+                "cartButtonElementSelector":'<?php echo $cartButtonElementSelector ?>',
+                "modeView":'<?php echo $helper->getActionHandle()?>',
+                "classActionButton":'<?php echo $classActionButton ?>',
+                "productType"='<?php echo $productType ?>'
+            }
+            $.('callforprice-product#productId _<?php echo $product->getId() ?>').callforprice(callforpriceConfig);
+        });
+    </script>
+    <?php endif ?>

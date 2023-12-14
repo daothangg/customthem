@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+     <body>		
+        <referenceContainer name="after.body.start">			
+            <block class="Magento\Framework\View\Element\Js\Components" name="head.components" as="components" template="Ced_FeaturedSlider::js/components.phtml"/>
+        </referenceContainer>      
+    </body>
+</page>
